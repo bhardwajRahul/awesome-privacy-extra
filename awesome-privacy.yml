@@ -213,16 +213,6 @@ categories:
           Simple, native, open source 2-FA Client for iOS, which never connects to the
           internet - built by @mattrubin.me
 
-      - name: Raivo OTP
-        url: https://raivo-otp.com/
-        icon: https://raivo-otp.com/img/app-icon.png
-        github: raivo-otp/ios-application
-        followWith: iOS
-        iosApp: https://apps.apple.com/us/app/raivo-authenticator/id1459042137
-        description: |
-          A native, lightweight and secure one-time-password (OTP) client built for iOS;
-          Raivo OTP! - built by @tijme
-
       - name: WinAuth
         url: https://winauth.github.io/winauth
         github: winauth/winauth
@@ -252,6 +242,20 @@ categories:
           Authenticator Extension is an in-browser One-Time Password (OTP) client,
           supports both Time-Based One-Time Password (TOTP, specified in [RFC 6238](https://tools.ietf.org/html/rfc6238))
           and HMAC-Based One-Time Password (HOTP, specified in [RFC 4226](https://tools.ietf.org/html/rfc4226)).
+
+      - name: Ente Auth
+        url: https://ente.io/auth/
+        icon: https://raw.githubusercontent.com/ente-io/ente/main/auth/assets/icons/auth-icon.ico
+        openSource: true
+        github: ente-io/ente
+        tosdrId: 5256
+        iosApp: https://apps.apple.com/us/app/ente-auth/id6444121398
+        androidApp: io.ente.auth
+        description: |
+          Ente Auth is a free and open-source app which stores and generates TOTP tokens. 
+          It can be used with an online account to backup and sync your tokens across your 
+          devices (and access them via a web interface) in a secure, end-to-end encrypted 
+          fashion. It can also be used offline on a single device with no account necessary.
 
       furtherInfo: >
         Check which websites support multi-factor authentication: [2fa.directory](https://2fa.directory/)
@@ -1067,6 +1071,16 @@ categories:
     - name: Virtual Phone Numbers
       alternativeTo: ['google voice', 'grasshopper', 'ringcentral', 'sideline', 'burner']
       services:
+      - name: SMSPool
+        url: https://www.smspool.net
+        icon: https://www.smspool.net/apple-touch-icon.png
+        description: |
+          Don't feel comfortable giving out your phone number? Protect your online identity by using our one-time-use non-VoIP phone numbers. 
+          We support over 50+ countries and support over 300+ services.
+        androidApp: com.smspool.app
+        iosApp: https://apps.apple.com/app/smspool/id6474617801
+        tosdrId: 10033
+        acceptsCrypto: true
       - name: Silent.link
         url: https://silent.link/
         icon: https://silent.link/static/favicon/apple-icon-114x114.png
