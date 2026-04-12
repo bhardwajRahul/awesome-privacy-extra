@@ -48,7 +48,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 - **Networking**
 	- [Virtual Private Networks](#virtual-private-networks) (7)
 	- [Self-Hosted Network Security](#self-hosted-network-security) (8)
-	- [Mix Networks](#mix-networks) (3)
+	- [Anonymity Networks](#anonymity-networks) (3)
 	- [Proxies](#proxies) (2)
 	- [DNS Providers](#dns-providers) (3)
 	- [DNS Clients](#dns-clients) (6)
@@ -1589,27 +1589,27 @@ Fun little projects that you can run on a Raspberry Pi, or other low-powered com
 
 ---
 
-### Mix Networks
+### Anonymity Networks
 
-- **[<img src='https://www.torproject.org/static/images/favicon/favicon.ico' width='16' height='16' alt='icon' /> Tor](https://www.torproject.org)** - Tor provides robust anonymity, allowing you to defend against surveillance, circumvent censorship and reduce tracking. It blocks trackers, resists fingerprinting and implements multi-layered encryptio[…](https://awesome-privacy.xyz/networking/mix-networks/tor "View full Tor report") 
+- **[<img src='https://www.torproject.org/static/images/favicon/favicon.ico' width='16' height='16' alt='icon' /> Tor](https://www.torproject.org)** - Tor provides robust anonymity, allowing you to defend against surveillance, circumvent censorship and reduce tracking. It blocks trackers, resists fingerprinting and implements multi-layered encryptio[…](https://awesome-privacy.xyz/networking/anonymity-networks/tor "View full Tor report") 
 	- <details>
 		<summary>Stats</summary>
 
-		[![GitHub: torproject/tor](https://img.shields.io/github/stars/torproject/tor?style=flat&logo=github&label=tor&color=%235f53f4&cacheSeconds=3600)](https://github.com/torproject/tor) [![Privacy Policy](https://shields.tosdr.org/en_2845.svg)](https://tosdr.org/en/service/2845) [![Tor on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Tor)](https://awesome-privacy.xyz/networking/mix-networks/tor)ㅤ 
+		[![GitHub: torproject/tor](https://img.shields.io/github/stars/torproject/tor?style=flat&logo=github&label=tor&color=%235f53f4&cacheSeconds=3600)](https://github.com/torproject/tor) [![Privacy Policy](https://shields.tosdr.org/en_2845.svg)](https://tosdr.org/en/service/2845) [![Tor on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Tor)](https://awesome-privacy.xyz/networking/anonymity-networks/tor)ㅤ 
 
 		</details>
-- **[<img src='https://geti2p.net/_static/favicon.ico' width='16' height='16' alt='icon' /> I2P](https://geti2p.net)** - I2P offers great generic transports, it is well geared towards accessing hidden services, and has a couple of technical benefits over Tor: P2P friendly with unidirectional short-lived tunnels, it is p[…](https://awesome-privacy.xyz/networking/mix-networks/i2p "View full I2P report") 
+- **[<img src='https://geti2p.net/_static/favicon.ico' width='16' height='16' alt='icon' /> I2P](https://geti2p.net)** - I2P offers great generic transports, it is well geared towards accessing hidden services, and has a couple of technical benefits over Tor: P2P friendly with unidirectional short-lived tunnels, it is p[…](https://awesome-privacy.xyz/networking/anonymity-networks/i2p "View full I2P report") 
 	- <details>
 		<summary>Stats</summary>
 
-		[![I2P on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=I2P)](https://awesome-privacy.xyz/networking/mix-networks/i2p) [![Open Source](https://img.shields.io/badge/-Open_Source-3DA639?style=flat&logo=opensourceinitiative&logoColor=white)](https://geti2p.net)ㅤ 
+		[![I2P on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=I2P)](https://awesome-privacy.xyz/networking/anonymity-networks/i2p) [![Open Source](https://img.shields.io/badge/-Open_Source-3DA639?style=flat&logo=opensourceinitiative&logoColor=white)](https://geti2p.net)ㅤ 
 
 		</details>
-- **[<img src='https://www.hyphanet.org/favicon.ico' width='16' height='16' alt='icon' /> Freenet](https://freenetproject.org)** - Freenet is easy to setup, provides excellent friend To Friend Sharing vs I2P, and is great for publishing content anonymously. It's quite large in size, and very slow so not the best choice for casual[…](https://awesome-privacy.xyz/networking/mix-networks/freenet "View full Freenet report") 
+- **[<img src='https://www.hyphanet.org/favicon.ico' width='16' height='16' alt='icon' /> Freenet](https://freenetproject.org)** - Freenet is easy to setup, provides excellent friend To Friend Sharing vs I2P, and is great for publishing content anonymously. It's quite large in size, and very slow so not the best choice for casual[…](https://awesome-privacy.xyz/networking/anonymity-networks/freenet "View full Freenet report") 
 	- <details>
 		<summary>Stats</summary>
 
-		[![GitHub: hyphanet/fred](https://img.shields.io/github/stars/hyphanet/fred?style=flat&logo=github&label=fred&color=%235f53f4&cacheSeconds=3600)](https://github.com/hyphanet/fred) [![Freenet on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Freenet)](https://awesome-privacy.xyz/networking/mix-networks/freenet)ㅤ 
+		[![GitHub: hyphanet/fred](https://img.shields.io/github/stars/hyphanet/fred?style=flat&logo=github&label=fred&color=%235f53f4&cacheSeconds=3600)](https://github.com/hyphanet/fred) [![Freenet on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Freenet)](https://awesome-privacy.xyz/networking/anonymity-networks/freenet)ㅤ 
 
 		</details>
 

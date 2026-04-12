@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T12:54:28Z",
+  "generatedAt": "2026-04-12T21:16:54Z",
   "processedShas": [
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
     "0565145265ae63168dafcd48c5e13d8604691a10",
@@ -41,6 +41,7 @@
     "698e818f03fda883ec55a630bd9380d7cf214bb8",
     "69f6a2755a08caaa814201be36c9a809961b7f78",
     "7177ba26e054a6f173ec451b420ee64d5fdef69b",
+    "75ad504f96da49df98dc30842d820fd74c85deb0",
     "824f20bf68f046a9f9bdaaf41a36a4a7e46c2d9f",
     "874dbdacae9c71cea100c85dc2b05bd348d20173",
     "8c0cdf76b53040df0fe362941ca4a085d346ce8a",
@@ -87,6 +88,79 @@
     "fa1c504da13a0d2f8e75ef95566811e54750ff3d"
   ],
   "entries": [
+    {
+      "date": "2026-04-12",
+      "sha": "75ad504f96da49df98dc30842d820fd74c85deb0",
+      "pr": {
+        "number": 495,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/495",
+        "author": "Lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Freenet",
+              "category": "Networking",
+              "section": "Anonymity Networks"
+            },
+            {
+              "name": "I2P",
+              "category": "Networking",
+              "section": "Anonymity Networks"
+            },
+            {
+              "name": "Tor",
+              "category": "Networking",
+              "section": "Anonymity Networks"
+            }
+          ],
+          "removed": [
+            {
+              "name": "Freenet",
+              "category": "Networking",
+              "section": "Mix Networks"
+            },
+            {
+              "name": "I2P",
+              "category": "Networking",
+              "section": "Mix Networks"
+            },
+            {
+              "name": "Tor",
+              "category": "Networking",
+              "section": "Mix Networks"
+            }
+          ],
+          "modified": [
+            {
+              "name": "VNote",
+              "category": "Productivity",
+              "section": "Digital Notes",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        },
+        "sections": {
+          "added": [
+            {
+              "name": "Anonymity Networks",
+              "category": "Networking"
+            }
+          ],
+          "removed": [
+            {
+              "name": "Mix Networks",
+              "category": "Networking"
+            }
+          ]
+        },
+        "categories": {}
+      }
+    },
     {
       "date": "2026-03-28",
       "sha": "5f84c75e9a52780eca896e9cbce656698412a372",
@@ -2915,6 +2989,26 @@
     }
   ],
   "rejections": [
+    {
+      "date": "2026-04-12",
+      "title": "Add SammaPix — privacy-first browser-based image toolkit (27 tools)",
+      "pr": {
+        "number": 493,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/493",
+        "author": "samma1997",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/57420198?v=4"
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "title": "Add CookieBoss to Online Tools",
+      "pr": {
+        "number": 489,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/489",
+        "author": "JonasDNielsen",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/17123799?v=4"
+      }
+    },
     {
       "date": "2026-04-08",
       "title": "Add PureMac to Mac OS Defences",
