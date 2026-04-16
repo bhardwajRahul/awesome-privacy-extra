@@ -253,6 +253,23 @@ const makeSearchLd = () => {
 		}
 	}
 
+	.small-button {
+		display: inline-block;
+		font-family: var(--font-subtitle);
+		font-size: var(--text-sm);
+		font-weight: bold;
+		text-decoration: none;
+		color: var(--accent-fg);
+		background: var(--accent);
+		border: var(--border-light);
+		box-shadow: var(--shadow-sm);
+		padding: var(--space-xs) var(--space-md);
+		transition: var(--transition-normal);
+		&:hover {
+			box-shadow: var(--shadow-sm-hover);
+		}
+	}
+
 	.accent-heading {
 		font-size: var(--text-3xl);
 		margin: calc(var(--space-lg) * -1) 0 var(--space-md)

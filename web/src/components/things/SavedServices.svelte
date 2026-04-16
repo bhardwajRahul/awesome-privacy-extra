@@ -59,14 +59,17 @@
   {:else if !serviceList}
     <div class="nothing-yet">
       <p>
-        Here you'll find a list of all the software and services you've
-        bookmarked.
+        Save software and services, to curate your own privacy-respecting
+        software collection.
       </p>
       <small>
         All data is stored on-device, in your browser's local storage, and not
         sent anywhere unless you choose to share it
       </small>
       <p class="nope">Nothing saved yet!</p>
+      <div class="footer">
+        <a class="small-button" href="/all">Browse all entries &rarr;</a>
+      </div>
     </div>
   {/if}
 </div>
@@ -80,6 +83,14 @@
   }
 
   .nothing-yet {
+    background: var(--accent-fg);
+    border: var(--border-heavy);
+    border-radius: var(--curve-sm);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-md);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
     text-align: center;
     p {
       margin: 0;
@@ -90,9 +101,14 @@
     }
     .nope {
       font-weight: bold;
-      margin: var(--space-lg) 0;
-      opacity: 0.2;
+      margin: var(--space-lg) 0 var(--space-sm);
       font-size: var(--text-xl);
+      opacity: var(--opacity-muted);
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: var(--space-md);
     }
   }
 </style>

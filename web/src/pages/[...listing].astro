@@ -35,6 +35,7 @@ interface Props extends Service {
 
 const {
 	name,
+	description,
 	url,
 	github,
 	tosdrId,
@@ -156,7 +157,10 @@ const serviceHistory = await fetchChangelog().then(({ entries }) => {
 		c.name === name &&
 		c.category === categoryName &&
 		c.section === parentSection.name;
-	const isHere = (m: { name: string; to: { category: string; section: string } }) =>
+	const isHere = (m: {
+		name: string;
+		to: { category: string; section: string };
+	}) =>
 		m.name === name &&
 		m.to.category === categoryName &&
 		m.to.section === parentSection.name;
@@ -218,6 +222,30 @@ const secSlug = slugify(parentSection.name);
 const getApiEndpoint = () => {
 	return `https://api.awesome-privacy.xyz/${catSlug}/${secSlug}/${slugify(name)}`;
 };
+
+const makeSoftwareSchema = () => {
+	const operatingSystem = [
+		iosApp && 'iOS',
+		androidApp && 'Android',
+		url && 'Web',
+	].filter(Boolean);
+	const plainDescription = (description || '')
+		.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+		.replace(/[*_`~]/g, '')
+		.trim();
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'SoftwareApplication',
+		name,
+		description: plainDescription || makeDescriptionTag(),
+		url,
+		applicationCategory: parentSection.name,
+		...(operatingSystem.length && {
+			operatingSystem: operatingSystem.join(', '),
+		}),
+		...(github && { codeRepository: `https://github.com/${github}` }),
+	};
+};
 ---
 
 <Layout
@@ -225,6 +253,7 @@ const getApiEndpoint = () => {
 	keywords={makeKeyWordTag()}
 	description={makeDescriptionTag()}
 	breadcrumbs={makeBreadcrumbs()}
+	customSchemaJson={makeSoftwareSchema()}
 >
 	<main>
 		<ListingHero
@@ -236,7 +265,7 @@ const getApiEndpoint = () => {
 		{
 			privacyData && privacyData.parameters.points.length > 0 && (
 				<section>
-					<h3>{name} Privacy Policy</h3>
+					<h2>{name} Privacy Policy</h2>
 					<PrivacyPolicyDetails privacyData={privacyData} />
 				</section>
 			)
@@ -244,7 +273,7 @@ const getApiEndpoint = () => {
 		{
 			github && githubData && (
 				<section class="github-wrap">
-					<h3>{name} Source Code</h3>
+					<h2>{name} Source Code</h2>
 					<GitHubDetailedInfo gitHubData={githubData} repo={github} />
 				</section>
 			)
@@ -252,7 +281,7 @@ const getApiEndpoint = () => {
 		{
 			websiteData && (
 				<section>
-					<h3>{name} Website</h3>
+					<h2>{name} Website</h2>
 					<WebsiteDetailedInfo url={url} websiteInfo={websiteData} />
 				</section>
 			)
@@ -260,7 +289,7 @@ const getApiEndpoint = () => {
 		{
 			androidData && !androidData.error && (
 				<section>
-					<h3>{name} Android App</h3>
+					<h2>{name} Android App</h2>
 					<AndroidAppDetailedInfo androidData={androidData} />
 				</section>
 			)
@@ -270,7 +299,7 @@ const getApiEndpoint = () => {
 				typeof iosData === 'object' &&
 				Object.keys(iosData).length > 0 && (
 					<section>
-						<h3>{name} iOS App</h3>
+						<h2>{name} iOS App</h2>
 						<IosAppDetailedInfo url={url} iosData={iosData} />
 					</section>
 				)
@@ -278,7 +307,7 @@ const getApiEndpoint = () => {
 		{
 			dockerData && dockerData.found && (
 				<section>
-					<h3>{name} Docker</h3>
+					<h2>{name} Docker</h2>
 					<DockerDetailedInfo docker={dockerData} />
 				</section>
 			)
@@ -286,7 +315,7 @@ const getApiEndpoint = () => {
 		{
 			(discordData || redditData) && (
 				<section>
-					<h3>{name} Socials</h3>
+					<h2>{name} Socials</h2>
 					<div class="social-wrap">
 						{discordData && <DiscordDetailedInfo discordData={discordData} />}
 						{redditData && <RedditDetailedInfo redditData={redditData} />}
@@ -296,12 +325,12 @@ const getApiEndpoint = () => {
 		}
 
 		<section>
-			<h3>{name} Reviews</h3>
+			<h2>{name} Reviews</h2>
 			<Comments client:visible />
 		</section>
 
 		<section>
-			<h3>More {parentSection.name}</h3>
+			<h2>More {parentSection.name}</h2>
 			<ServiceList
 				services={filterServices()}
 				subHeading={true}
@@ -312,7 +341,7 @@ const getApiEndpoint = () => {
 			/>
 		</section>
 		<section>
-			<h3>About the Data: {name}</h3>
+			<h2>About the Data: {name}</h2>
 			<DataActions
 				client:load
 				categoryName={categoryName}
@@ -320,7 +349,7 @@ const getApiEndpoint = () => {
 				serviceName={name}
 				history={serviceHistory}
 			/>
-			<h4>API</h4>
+			<h3>API</h3>
 			<p>
 				You can access {name}'s data programmatically via our API. Simply make a <code
 					>GET</code
@@ -335,7 +364,7 @@ const getApiEndpoint = () => {
 		</section>
 
 		<section>
-			<h3>Share {name}</h3>
+			<h2>Share {name}</h2>
 			<p>
 				Help your friends compare {parentSection.name}, and pick
 				privacy-respecting software and services.<br />
@@ -406,7 +435,7 @@ const getApiEndpoint = () => {
 		margin: var(--space-xs) 0 var(--space-sm) 0;
 	}
 
-	h3 {
+	h2 {
 		font-size: var(--text-3xl);
 		margin: -2rem 0 var(--space-md) -2rem;
 		box-shadow: var(--shadow-lg);
@@ -419,7 +448,7 @@ const getApiEndpoint = () => {
 		}
 	}
 
-	h4 {
+	h3 {
 		font-size: var(--text-lg);
 		margin-bottom: 0;
 	}

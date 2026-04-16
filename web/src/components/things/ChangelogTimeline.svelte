@@ -112,7 +112,11 @@
         { name: m.name, category: m.to.category, section: m.to.section },
       ]),
       ...s.renamed.flatMap((m) => [
-        { name: m.previousName, category: m.from.category, section: m.from.section },
+        {
+          name: m.previousName,
+          category: m.from.category,
+          section: m.from.section,
+        },
         { name: m.name, category: m.to.category, section: m.to.section },
       ]),
     ];
@@ -197,8 +201,7 @@
       })),
       ...s.renamed.map((v) => {
         const sameLoc =
-          v.from.category === v.to.category &&
-          v.from.section === v.to.section;
+          v.from.category === v.to.category && v.from.section === v.to.section;
         return {
           badge: 'Renamed',
           cls: 'mod',

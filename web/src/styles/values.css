@@ -105,8 +105,8 @@ html {
 		--background-hr-color: #ececec;
 
 		--changelog-rem: #b59207;
-        --changelog-rej: #d71e41;
-        --changelog-mod: #2e89b5;
-        --changelog-add: #509762;
+		--changelog-rej: #d71e41;
+		--changelog-mod: #2e89b5;
+		--changelog-add: #509762;
 	}
 }

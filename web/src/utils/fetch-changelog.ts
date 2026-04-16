@@ -2,7 +2,7 @@ import { error } from './logger';
 
 const changelogUrl =
   // 'https://raw.githubusercontent.com/Lissy93/awesome-privacy/main/.github/changelog.json';
-'https://gist.githubusercontent.com/Lissy93/ddae176f3f21a0d3c0251f5f6cbd3b09/raw/5fb0fe42a54a9395a988f7875e88a484769ea6dd/changelog.json';
+  'https://gist.githubusercontent.com/Lissy93/ddae176f3f21a0d3c0251f5f6cbd3b09/raw/9e62d21ea8866709520331dd2ec6a67494460707/changelog.json';
 
 export interface ChangelogPr {
   number: number;

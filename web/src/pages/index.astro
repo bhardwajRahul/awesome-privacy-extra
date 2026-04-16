@@ -4,9 +4,9 @@ import Hero from '@components/Hero.astro';
 import Search from '@components/things/Search.svelte';
 import SectionList from '@components/things/SectionList.astro';
 import SavedServices from '@components/things/SavedServices.svelte';
+import LatestUpdates from '@components/things/LatestUpdates.astro';
 
 import { fetchData } from '@utils/fetch-data';
-import Button from '@components/form/Button.astro';
 import type { Category } from 'src/types/Service';
 
 const categories = (await fetchData())?.categories || ([] as Category[]);
@@ -37,10 +37,12 @@ const description =
 				))
 			}
 		</ul>
-		<div class="view-all">
-			<span>Or, just</span>
-			<Button url="/all" text="View Everything" />
+		<div class="categories-footer">
+			<a class="small-button" href="/all">View everything &rarr;</a>
 		</div>
+
+		<h2><a href="/changelog">Latest Updates</a></h2>
+		<LatestUpdates categories={categories} />
 
 		<h2><a href="/inventory">Saved Items</a></h2>
 		<SavedServices allData={categories} client:load />
@@ -72,10 +74,9 @@ const description =
 					href="https://github.com/sponsors/lissy93">sponsoring me</a
 				> on GitHub.
 			</p>
-		</div>
-		<div class="view-all">
-			<span>Want to learn more?</span>
-			<Button url="/about" text="Keep Reading..." />
+			<div class="about-footer">
+				<a class="small-button" href="/about">Keep reading &rarr;</a>
+			</div>
 		</div>
 	</main>
 </Layout>
@@ -92,14 +93,10 @@ const description =
 		@media (max-width: 768px) {
 			padding: 0;
 		}
-		.view-all {
-			text-align: center;
-			width: 16rem;
-			margin: 0 auto;
-			span {
-				opacity: var(--opacity-dim);
-				font-size: var(--text-base);
-			}
+		.categories-footer {
+			display: flex;
+			justify-content: flex-end;
+			margin: var(--space-md) 0;
 		}
 	}
 	.action-card {
@@ -177,6 +174,11 @@ const description =
 		width: 100%;
 		box-sizing: border-box;
 		margin: 0 auto;
+		.about-footer {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: var(--space-md);
+		}
 	}
 
 	.categories {
