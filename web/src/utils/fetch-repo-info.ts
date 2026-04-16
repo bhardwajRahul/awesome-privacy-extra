@@ -60,25 +60,43 @@ const fetchFromGitHub = async (
       watchersCount: info.watchers_count ?? 0,
     },
     languages: languages ?? {},
-    versions: (tags ?? []).map((tag: any) => ({
-      name: tag.name,
-      commit: tag.commit?.sha ?? '',
-      zipball: tag.zipball_url ?? '',
-      tarball: tag.tarball_url ?? '',
-    })),
-    contributors: (contributors ?? []).map((c: any) => ({
-      username: c.login ?? '',
-      avatar: c.avatar_url ?? '',
-      contributions: c.contributions ?? 0,
-    })),
-    commits: (commits ?? []).map((c: any) => ({
-      sha: c.sha ?? '',
-      authorName: c.commit?.author?.name ?? '',
-      authorDate: c.commit?.author?.date ?? '',
-      message: c.commit?.message ?? '',
-      authorUsername: c.author?.login ?? '',
-      authorAvatar: c.author?.avatar_url ?? '',
-    })),
+    versions: (tags ?? []).map(
+      (tag: {
+        name: string;
+        commit?: { sha?: string };
+        zipball_url?: string;
+        tarball_url?: string;
+      }) => ({
+        name: tag.name,
+        commit: tag.commit?.sha ?? '',
+        zipball: tag.zipball_url ?? '',
+        tarball: tag.tarball_url ?? '',
+      }),
+    ),
+    contributors: (contributors ?? []).map(
+      (c: { login?: string; avatar_url?: string; contributions?: number }) => ({
+        username: c.login ?? '',
+        avatar: c.avatar_url ?? '',
+        contributions: c.contributions ?? 0,
+      }),
+    ),
+    commits: (commits ?? []).map(
+      (c: {
+        sha?: string;
+        commit?: {
+          author?: { name?: string; date?: string };
+          message?: string;
+        };
+        author?: { login?: string; avatar_url?: string };
+      }) => ({
+        sha: c.sha ?? '',
+        authorName: c.commit?.author?.name ?? '',
+        authorDate: c.commit?.author?.date ?? '',
+        message: c.commit?.message ?? '',
+        authorUsername: c.author?.login ?? '',
+        authorAvatar: c.author?.avatar_url ?? '',
+      }),
+    ),
   };
 };
 
