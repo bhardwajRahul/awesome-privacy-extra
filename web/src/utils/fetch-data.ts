@@ -1,5 +1,6 @@
 import yaml from 'js-yaml';
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 import type { AwesomePrivacy } from '../types/Service';
 
@@ -8,7 +9,7 @@ const awesomePrivacyData =
 
 export const fetchData = async (): Promise<AwesomePrivacy> => {
   try {
-    const res = await fetch(awesomePrivacyData);
+    const res = await safeFetch(awesomePrivacyData, {}, 15000);
     if (!res.ok) {
       error(
         'Data',

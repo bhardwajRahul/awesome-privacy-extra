@@ -1,11 +1,12 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 export const fetchDockerData = async (
   serviceName: string,
 ): Promise<TemplateResponse | null> => {
   const endpoint = `https://docker-info.as93.workers.dev/${serviceName}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error('Docker', `HTTP ${res.status} for ${serviceName} (${endpoint})`);
       return null;

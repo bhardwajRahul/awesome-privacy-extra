@@ -1,8 +1,9 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 const changelogUrl =
-  // 'https://raw.githubusercontent.com/Lissy93/awesome-privacy/main/.github/changelog.json';
-  'https://gist.githubusercontent.com/Lissy93/ddae176f3f21a0d3c0251f5f6cbd3b09/raw/9e62d21ea8866709520331dd2ec6a67494460707/changelog.json';
+  'https://raw.githubusercontent.com/Lissy93/awesome-privacy/main/.github/changelog.json';
+// 'https://gist.githubusercontent.com/Lissy93/ddae176f3f21a0d3c0251f5f6cbd3b09/raw/9e62d21ea8866709520331dd2ec6a67494460707/changelog.json';
 
 export interface ChangelogPr {
   number: number;
@@ -74,7 +75,7 @@ export interface Changelog {
 
 export const fetchChangelog = async (): Promise<Changelog> => {
   try {
-    const res = await fetch(changelogUrl);
+    const res = await safeFetch(changelogUrl);
     if (!res.ok) {
       error('Changelog', `HTTP ${res.status} fetching changelog.json`);
       return { generatedAt: '', entries: [] };

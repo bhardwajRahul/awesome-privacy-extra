@@ -1,4 +1,5 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 const doubleCheckPackageName = (packageStr: string) => {
   return packageStr.includes('id=') ? packageStr.split('id=')[1] : packageStr;
@@ -9,7 +10,7 @@ export const fetchAndroidInfo = async (
 ): Promise<AndroidInfo | null> => {
   const endpoint = `https://android-app-privacy.as93.net/${doubleCheckPackageName(androidPackage)}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error(
         'Android',
