@@ -84,6 +84,12 @@ const makeSearchLd = () => {
 			rel="canonical"
 			href={`https://awesome-privacy.xyz${Astro.url.pathname}`}
 		/>
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Awesome Privacy — Changelog"
+			href="/rss.xml"
+		/>
 
 		<!-- Preload critical fonts -->
 		<link
@@ -250,6 +256,23 @@ const makeSearchLd = () => {
 		}
 		@media (max-width: 768px) {
 			display: none;
+		}
+	}
+
+	.small-button {
+		display: inline-block;
+		font-family: var(--font-subtitle);
+		font-size: var(--text-sm);
+		font-weight: bold;
+		text-decoration: none;
+		color: var(--accent-fg);
+		background: var(--accent);
+		border: var(--border-light);
+		box-shadow: var(--shadow-sm);
+		padding: var(--space-xs) var(--space-md);
+		transition: var(--transition-normal);
+		&:hover {
+			box-shadow: var(--shadow-sm-hover);
 		}
 	}
 

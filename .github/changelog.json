@@ -1,55 +1,82 @@
 {
-  "generatedAt": "2026-04-13T12:55:46Z",
+  "generatedAt": "2026-04-16T14:15:00Z",
   "processedShas": [
+    "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
     "0565145265ae63168dafcd48c5e13d8604691a10",
     "0720acdb7bc3f8b7f100cbbc7faea3fc476067df",
+    "079c3242b4ca058a8ccb252da4dccd4f30870542",
     "09c0116be9f371c94511c1f1ce7cb5d3c4bd7708",
+    "09e87c7fe4db0e76161d6a88b0ed3d6aafc3b22c",
     "0e78d9828cdec94f90d2bc7f8952c3a71211b4b3",
     "0fe9153c7373f4f43460a5c0f10a517ea7fdd002",
     "10ae757913132dd3da408b7c4b33bcedffbf2d8e",
+    "131ee17431d09301025cca74cfa7fa372d19dd4a",
     "138d578710fb6a8b6c874854acb32c1ef15ee96b",
     "14bc91cd0870039ddc2868c72eb09452a8642028",
     "16e19a7dd35eabf58961c296d63b06b3d8a686dc",
     "18638b8c99e173576f48a4296425b70277233794",
     "18d87f28c0cd393052d21fae15e9ca492b9a4243",
+    "1b8fb78a4673bd93282dbbd6f715871189ec9f5f",
     "1be23415958275eb6c82c3e6ccb3f16ecbb62d15",
     "1c36e4b8015e4c1152b1d51a36ba4991f3d64e10",
+    "1c9aef3329f9ed4b5c4e89b7ab9d780694183552",
     "1f79ce2ce71e6ab3526fd0995b94df67252510f2",
     "2173bbfac987696ebd73a30b05bdb2ac836c7ab2",
     "2275c0696dde8ab183f83b048e0baab4fe64ef7d",
     "229bae1e00b1c1c4c937a57121a71e3a079a8792",
+    "24dca25961a0fed853190ed3c70da27bc142d2d1",
+    "26817ef8c36183cb7589b29134531a35ce4e2beb",
     "2a32df40e389822731ec2ab5b94c00a3a500581f",
     "2b28a28b42b9606c83e43485be5f8c830167fdaa",
     "2db7dbd294780e8c49ea02f0b5daa735fd137809",
     "2e1e2f81063a2a87365058fb26f8db7cf28acf8a",
+    "303cc2f8a124db8a9d0a2b5562725811069ceaa5",
     "30569aa9b85bc55905b08c00719ce3715df6c8e7",
     "335a2df16b0f7accf9a56cc22aa7030dbdac6f13",
     "374c14a68a4c3df451e718cdb6e0447b1b7a3c56",
     "376a2ebe1336c956ef0b8f14b829bb12ede3c589",
+    "37a568f94afd5a677598f080186f10e202108678",
     "38441ff44cb085ce70667b79460e90fac4f847a6",
+    "39fd929067cb8e48c12314e88ec42436fd30e024",
     "3a462d6d2f792b391753a9b66cffa5e42dd68c55",
     "3c768cfd34bb4a75c740815874dfb99b31233fa7",
+    "3e760b3a774e6b65f62866dc3effa5b504a4e10f",
     "4145b323ab2b8e93d05392ba12ace9ee815c27f9",
     "4155d6bcfc0d01136a323bfb841452e478be1fa6",
     "463d62190462ca5dfdf71fa72234a10e6dbcdd48",
     "474de7b56c37fb9bf8991fcc3e42df91acc74049",
     "47cd53ef705bb9ae855e521bc68c0597b14f7325",
+    "48b4e2c0e5c66e573b3ab3bd567bf1c614d42473",
+    "538f2364d3dbab3efdce45e3797da90f09da59b0",
     "5b772f3ea6f2e480b07bb09a1b523553198fd386",
     "5ec99fe78361e422648aec2eff69375fcc3ca810",
     "5f84c75e9a52780eca896e9cbce656698412a372",
+    "60f4dbb1d011f460385c7fe29b92bf0d122cd615",
+    "61204318c73bb25efae3567bf64e55522b69cc47",
+    "615fc63dbbcfc19a5fb911d893c2bc40ad33ab69",
     "639eb6794696341f32b582c50a0ecd7a91db52d1",
+    "690d3e40da8b0ef98b93ba5bf066dc88a84027cb",
     "698e818f03fda883ec55a630bd9380d7cf214bb8",
     "69f6a2755a08caaa814201be36c9a809961b7f78",
+    "6cf287d925558028acb263fbafa7eb412abfed17",
     "7177ba26e054a6f173ec451b420ee64d5fdef69b",
     "75ad504f96da49df98dc30842d820fd74c85deb0",
+    "7a3286122e197a9b5836cfcd73fca768ccf6f50e",
+    "7dd8e9943c9a138710901ecf1bf4775b6167629a",
+    "81ed2551032e527bf5b752df5608411f91a12150",
     "824f20bf68f046a9f9bdaaf41a36a4a7e46c2d9f",
     "874dbdacae9c71cea100c85dc2b05bd348d20173",
+    "88c0cb324458962c52691a05384aab459bf740b2",
     "8c0cdf76b53040df0fe362941ca4a085d346ce8a",
+    "8ee48cc161dd204f6eea70e8988ad3d4eb17e0c7",
     "90d8ef9b928ed9abb25b3c2480717e6174451488",
     "9138eddcdec8ede666db70bc44d98b33c9f9653e",
+    "97087e9763354540028fc571aca552a83464cc1d",
     "99cf5f51acf1b8ac09558bf419abe18586233668",
+    "9bada64f52e3504fb7470ccecbbb5a2b2bf545f7",
     "9bfe4992518d16b7877f13a4a3c6902b013670a1",
+    "9d1bc2480ddd364c385f6ad6d9e0722202fe6205",
     "9ef9e90d30804239482c9a6e2903fd015b1224c4",
     "a2cef5cbf9e19acbf192c97b59bb82e06a7f3a2a",
     "a539b1dd64eba2d9f68f3a63c4f2b170fc31fcef",
@@ -58,6 +85,7 @@
     "a9435899b546525af821d56d85f252eaa2767fa1",
     "aa8d1c9f7749c377ce32f712fc7b7e29ce65a4f1",
     "ab6c8a515359942d7c20d9244904819c144c5db5",
+    "ab9150fa71812ae4c395d499f1500d3c91b2b54c",
     "afc1bddb019a762fc3f2741547ffdc205c0bfe19",
     "b2113d1d8325447daf6cfa9c12a53f1fbcf33928",
     "b26fbcfeff3ef2cdd0394d6cb2df5711c4e7d31b",
@@ -67,18 +95,22 @@
     "ba27593a5dcbfd58b4b9079277c54b0836d183d8",
     "bbafb2908e2189ef959ebc5fa8ccfab91402f62f",
     "bc2f085c6329b3e60b29017a40c5413b494679e8",
+    "bc99ed2b8704c26e3165320efe62dd863521b26e",
     "bd021a41c3c5858c0474bb407ad406d5c4664aaa",
     "c58dec4d6fc4226b3365df168b68baefc02e12ac",
     "c867fd7423f3e4b8e455b435018be8fc3bd6c99a",
     "c9c49f8cde13d978c4fbdefbb78bc4de45546492",
     "ca4702933d6234a50f654e034869ed66a1dfd043",
+    "cae7b723a635c2035907db9d2cbc7f42d17f92e2",
     "ccac7d7e61218b60d2c74b497ff58f42f783e9fc",
     "ccbab9def79590fa9194fcb8ffb4e6ab193cba87",
     "ccc7b43aa598acf709f8f5c77f987c2b95ec2921",
     "d027f6bf3eb4420f106b6778fa302f326a05f08c",
     "d397fc760983ced96c6d187305c0ea210ac6cece",
-    "d6d9ae19e959bd9f10d0d4aa1e326e55f0c05174",
+    "da7374ad750bd07bc42649cfdd09edd14901cc40",
     "dec42f0572b2f52fad5ccd5f52ae6f4ae0b18721",
+    "df686cd77a1ff89ba9a318089d46c1585b63b572",
+    "e192c0a4ae62d6d5dc4f3d163825b6b90205527a",
     "e33ee115950f0d56c764e5d0581e1d697afbb63f",
     "e7474c579b7e33b3c47ed76492068d914e4566f1",
     "e9b1fee82705ca9b52a9db6e081d46bc4c417f01",
@@ -86,7 +118,69 @@
     "ec9119761c83aeafc5cf436dc2306280212c2470",
     "f3adf137b0415999e4625ddc7e4ba26c2c56d4a9",
     "f3d9d9a7950d13baaae2f973600499f0d7b12e15",
-    "fa1c504da13a0d2f8e75ef95566811e54750ff3d"
+    "f4332e985d4064559535b16397d9c35fdce587eb",
+    "f987d9969923ee65464d0de187183719af278998",
+    "fa1c504da13a0d2f8e75ef95566811e54750ff3d",
+    "fd87f80e3777c170e28f035b7049f3bde57c69a6"
+  ],
+  "checkedRejectionPrs": [
+    367,
+    371,
+    372,
+    373,
+    379,
+    381,
+    382,
+    383,
+    385,
+    386,
+    388,
+    390,
+    396,
+    399,
+    401,
+    408,
+    409,
+    410,
+    411,
+    412,
+    416,
+    419,
+    420,
+    423,
+    428,
+    429,
+    431,
+    432,
+    435,
+    441,
+    444,
+    445,
+    452,
+    454,
+    455,
+    457,
+    460,
+    463,
+    464,
+    466,
+    467,
+    469,
+    470,
+    475,
+    476,
+    479,
+    483,
+    488,
+    489,
+    491,
+    493,
+    494,
+    497,
+    498,
+    499,
+    500,
+    501
   ],
   "entries": [
     {
@@ -123,40 +217,6 @@
       },
       "changes": {
         "services": {
-          "added": [
-            {
-              "name": "Freenet",
-              "category": "Networking",
-              "section": "Anonymity Networks"
-            },
-            {
-              "name": "I2P",
-              "category": "Networking",
-              "section": "Anonymity Networks"
-            },
-            {
-              "name": "Tor",
-              "category": "Networking",
-              "section": "Anonymity Networks"
-            }
-          ],
-          "removed": [
-            {
-              "name": "Freenet",
-              "category": "Networking",
-              "section": "Mix Networks"
-            },
-            {
-              "name": "I2P",
-              "category": "Networking",
-              "section": "Mix Networks"
-            },
-            {
-              "name": "Tor",
-              "category": "Networking",
-              "section": "Mix Networks"
-            }
-          ],
           "modified": [
             {
               "name": "VNote",
@@ -166,45 +226,57 @@
                 "description"
               ]
             }
+          ],
+          "moved": [
+            {
+              "name": "Freenet",
+              "from": {
+                "category": "Networking",
+                "section": "Mix Networks"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Anonymity Networks"
+              }
+            },
+            {
+              "name": "I2P",
+              "from": {
+                "category": "Networking",
+                "section": "Mix Networks"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Anonymity Networks"
+              }
+            },
+            {
+              "name": "Tor",
+              "from": {
+                "category": "Networking",
+                "section": "Mix Networks"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Anonymity Networks"
+              }
+            }
           ]
         },
         "sections": {
-          "added": [
+          "moved": [
             {
-              "name": "Anonymity Networks",
-              "category": "Networking"
-            }
-          ],
-          "removed": [
-            {
-              "name": "Mix Networks",
-              "category": "Networking"
-            }
-          ]
-        },
-        "categories": {}
-      }
-    },
-    {
-      "date": "2026-03-28",
-      "sha": "5f84c75e9a52780eca896e9cbce656698412a372",
-      "pr": {
-        "number": 317,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/317",
-        "author": "Shiina18",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/47315837?v=4"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "VNote",
-              "category": "Productivity",
-              "section": "Digital Notes"
+              "from": {
+                "category": "Networking",
+                "section": "Mix Networks"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Anonymity Networks"
+              }
             }
           ]
         },
-        "sections": {},
         "categories": {}
       }
     },
@@ -232,21 +304,21 @@
       }
     },
     {
-      "date": "2026-03-27",
-      "sha": "ca4702933d6234a50f654e034869ed66a1dfd043",
+      "date": "2026-03-28",
+      "sha": "5f84c75e9a52780eca896e9cbce656698412a372",
       "pr": {
-        "number": 364,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/364",
-        "author": "PythonGermany",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/97847597?v=4"
+        "number": 317,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/317",
+        "author": "Shiina18",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/47315837?v=4"
       },
       "changes": {
         "services": {
           "added": [
             {
-              "name": "Actual",
-              "category": "Finance",
-              "section": "Secure Budgeting"
+              "name": "VNote",
+              "category": "Productivity",
+              "section": "Digital Notes"
             }
           ]
         },
@@ -268,6 +340,29 @@
           "added": [
             {
               "name": "ezBookkeeping",
+              "category": "Finance",
+              "section": "Secure Budgeting"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2026-03-27",
+      "sha": "ca4702933d6234a50f654e034869ed66a1dfd043",
+      "pr": {
+        "number": 364,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/364",
+        "author": "PythonGermany",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/97847597?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Actual",
               "category": "Finance",
               "section": "Secure Budgeting"
             }
@@ -301,20 +396,20 @@
     },
     {
       "date": "2026-03-25",
-      "sha": "0565145265ae63168dafcd48c5e13d8604691a10",
+      "sha": "69f6a2755a08caaa814201be36c9a809961b7f78",
       "pr": {
-        "number": 307,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/307",
-        "author": "dillonstreator",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/26043866?v=4"
+        "number": 418,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/418",
+        "author": "lnvpn",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/180184255?v=4"
       },
       "changes": {
         "services": {
           "added": [
             {
-              "name": "crypt.fyi",
-              "category": "Productivity",
-              "section": "Secret Sharing"
+              "name": "nadanada",
+              "category": "Communication",
+              "section": "Virtual Phone Numbers"
             }
           ]
         },
@@ -333,20 +428,6 @@
       },
       "changes": {
         "services": {
-          "added": [
-            {
-              "name": "Hemmelig.app",
-              "category": "Productivity",
-              "section": "Secret Sharing"
-            }
-          ],
-          "removed": [
-            {
-              "name": "Hemmelig.app",
-              "category": "Security Tools",
-              "section": "Online Tools"
-            }
-          ],
           "modified": [
             {
               "name": "Narayana",
@@ -355,6 +436,19 @@
               "fields": [
                 "description"
               ]
+            }
+          ],
+          "moved": [
+            {
+              "name": "Hemmelig.app",
+              "from": {
+                "category": "Security Tools",
+                "section": "Online Tools"
+              },
+              "to": {
+                "category": "Productivity",
+                "section": "Secret Sharing"
+              }
             }
           ]
         },
@@ -394,20 +488,20 @@
     },
     {
       "date": "2026-03-25",
-      "sha": "69f6a2755a08caaa814201be36c9a809961b7f78",
+      "sha": "0565145265ae63168dafcd48c5e13d8604691a10",
       "pr": {
-        "number": 418,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/418",
-        "author": "lnvpn",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/180184255?v=4"
+        "number": 307,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/307",
+        "author": "dillonstreator",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/26043866?v=4"
       },
       "changes": {
         "services": {
           "added": [
             {
-              "name": "nadanada",
-              "category": "Communication",
-              "section": "Virtual Phone Numbers"
+              "name": "crypt.fyi",
+              "category": "Productivity",
+              "section": "Secret Sharing"
             }
           ]
         },
@@ -471,7 +565,7 @@
         "number": 453,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/453",
         "author": "Lissy93",
-        "authorAvatar": "https://github.com/Lissy93.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
       },
       "changes": {
         "services": {
@@ -494,7 +588,7 @@
         "number": 451,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/451",
         "author": "Lissy93",
-        "authorAvatar": "https://github.com/Lissy93.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
       },
       "changes": {
         "services": {
@@ -520,7 +614,7 @@
         "number": 443,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/443",
         "author": "Lissy93",
-        "authorAvatar": "https://github.com/Lissy93.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
       },
       "changes": {
         "services": {
@@ -543,7 +637,7 @@
         "number": 434,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/434",
         "author": "Lissy93",
-        "authorAvatar": "https://github.com/Lissy93.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
       },
       "changes": {
         "services": {
@@ -671,7 +765,7 @@
         "number": 438,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/438",
         "author": "johannesjo",
-        "authorAvatar": "https://github.com/johannesjo.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1456265?v=4"
       },
       "changes": {
         "services": {
@@ -701,7 +795,7 @@
         "number": 433,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/433",
         "author": "Lissy93",
-        "authorAvatar": "https://github.com/Lissy93.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
       },
       "changes": {
         "services": {
@@ -724,7 +818,7 @@
         "number": 427,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/427",
         "author": "ltguillaume",
-        "authorAvatar": "https://github.com/ltguillaume.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
       },
       "changes": {
         "services": {
@@ -750,7 +844,7 @@
         "number": 303,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/303",
         "author": "lanedirt",
-        "authorAvatar": "https://github.com/lanedirt.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/6917405?v=4"
       },
       "changes": {
         "services": {
@@ -788,7 +882,7 @@
         "number": 297,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/297",
         "author": "joeldavidw",
-        "authorAvatar": "https://github.com/joeldavidw.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4586209?v=4"
       },
       "changes": {
         "services": {
@@ -811,7 +905,7 @@
         "number": 422,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/422",
         "author": "ltguillaume",
-        "authorAvatar": "https://github.com/ltguillaume.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
       },
       "changes": {
         "services": {
@@ -829,35 +923,12 @@
     },
     {
       "date": "2026-03-07",
-      "sha": "2b28a28b42b9606c83e43485be5f8c830167fdaa",
-      "pr": {
-        "number": 365,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/365",
-        "author": "codebruinc",
-        "authorAvatar": "https://github.com/codebruinc.png?size=40"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "PikaSim",
-              "category": "Communication",
-              "section": "Virtual Phone Numbers"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2026-03-07",
       "sha": "c867fd7423f3e4b8e455b435018be8fc3bd6c99a",
       "pr": {
         "number": 370,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/370",
         "author": "emilynomura1",
-        "authorAvatar": "https://github.com/emilynomura1.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/49768143?v=4"
       },
       "changes": {
         "services": {
@@ -874,13 +945,36 @@
       }
     },
     {
+      "date": "2026-03-07",
+      "sha": "2b28a28b42b9606c83e43485be5f8c830167fdaa",
+      "pr": {
+        "number": 365,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/365",
+        "author": "codebruinc",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/57265689?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "PikaSim",
+              "category": "Communication",
+              "section": "Virtual Phone Numbers"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
       "date": "2026-02-28",
       "sha": "b8b8fa712eba68ffcbf4812d12e5c5b9b45c075f",
       "pr": {
         "number": 398,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/398",
         "author": "BrunoBernardino",
-        "authorAvatar": "https://github.com/BrunoBernardino.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1239616?v=4"
       },
       "changes": {
         "services": {
@@ -903,7 +997,7 @@
         "number": 393,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/393",
         "author": "BrunoBernardino",
-        "authorAvatar": "https://github.com/BrunoBernardino.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1239616?v=4"
       },
       "changes": {
         "services": {
@@ -946,7 +1040,7 @@
         "number": 387,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/387",
         "author": "Lissy93",
-        "authorAvatar": "https://github.com/Lissy93.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
       },
       "changes": {
         "services": {
@@ -1064,35 +1158,12 @@
     },
     {
       "date": "2025-12-27",
-      "sha": "a6bf3b89641bd9837f6613af3816b872ff2c2e6d",
-      "pr": {
-        "number": 357,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/357",
-        "author": "partyvpn",
-        "authorAvatar": "https://github.com/partyvpn.png?size=40"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "Party VPN",
-              "category": "Networking",
-              "section": "Virtual Private Networks"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2025-12-27",
       "sha": "d397fc760983ced96c6d187305c0ea210ac6cece",
       "pr": {
         "number": 359,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/359",
-        "author": "forwardemail",
-        "authorAvatar": "https://github.com/forwardemail.png?size=40"
+        "author": "titanism",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/101466223?v=4"
       },
       "changes": {
         "services": {
@@ -1113,13 +1184,59 @@
       }
     },
     {
+      "date": "2025-12-27",
+      "sha": "a6bf3b89641bd9837f6613af3816b872ff2c2e6d",
+      "pr": {
+        "number": 357,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/357",
+        "author": "partyvpn",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/242552856?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Party VPN",
+              "category": "Networking",
+              "section": "Virtual Private Networks"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2025-07-27",
+      "sha": "90d8ef9b928ed9abb25b3c2480717e6174451488",
+      "pr": {
+        "number": 334,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/334",
+        "author": "vitonsky",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/86191922?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Linguist",
+              "category": "Security Tools",
+              "section": "Browser Extensions"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
       "date": "2025-07-27",
       "sha": "2a32df40e389822731ec2ab5b94c00a3a500581f",
       "pr": {
         "number": 332,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/332",
         "author": "taregon",
-        "authorAvatar": "https://github.com/taregon.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/113083219?v=4"
       },
       "changes": {
         "services": {
@@ -1143,59 +1260,13 @@
       }
     },
     {
-      "date": "2025-07-27",
-      "sha": "90d8ef9b928ed9abb25b3c2480717e6174451488",
-      "pr": {
-        "number": 334,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/334",
-        "author": "vitonsky",
-        "authorAvatar": "https://github.com/vitonsky.png?size=40"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "Linguist",
-              "category": "Security Tools",
-              "section": "Browser Extensions"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2025-06-28",
-      "sha": "ab6c8a515359942d7c20d9244904819c144c5db5",
-      "pr": {
-        "number": 329,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/329",
-        "author": "marc3linho",
-        "authorAvatar": "https://github.com/marc3linho.png?size=40"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "SimpleX",
-              "category": "Communication",
-              "section": "Encrypted Messaging"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
       "date": "2025-06-28",
       "sha": "d027f6bf3eb4420f106b6778fa302f326a05f08c",
       "pr": {
         "number": 330,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/330",
         "author": "marc3linho",
-        "authorAvatar": "https://github.com/marc3linho.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/130232436?v=4"
       },
       "changes": {
         "services": {
@@ -1212,16 +1283,21 @@
       }
     },
     {
-      "date": "2025-04-10",
-      "sha": "d6d9ae19e959bd9f10d0d4aa1e326e55f0c05174",
-      "pr": null,
+      "date": "2025-06-28",
+      "sha": "ab6c8a515359942d7c20d9244904819c144c5db5",
+      "pr": {
+        "number": 329,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/329",
+        "author": "marc3linho",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/130232436?v=4"
+      },
       "changes": {
         "services": {
           "added": [
             {
-              "name": "VNote",
-              "category": "Productivity",
-              "section": "Digital Notes"
+              "name": "SimpleX",
+              "category": "Communication",
+              "section": "Encrypted Messaging"
             }
           ]
         },
@@ -1236,7 +1312,7 @@
         "number": 296,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/296",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1259,7 +1335,7 @@
         "number": 295,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/295",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1285,7 +1361,7 @@
         "number": 290,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/290",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1313,7 +1389,7 @@
         "number": 278,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/278",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1336,7 +1412,7 @@
         "number": 283,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/283",
         "author": "catbash",
-        "authorAvatar": "https://github.com/catbash.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/88514774?v=4"
       },
       "changes": {
         "services": {
@@ -1354,38 +1430,12 @@
     },
     {
       "date": "2024-09-27",
-      "sha": "02231fb0a59ee43f93c6d0143640284cb7587d71",
-      "pr": {
-        "number": 285,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/285",
-        "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
-      },
-      "changes": {
-        "services": {
-          "modified": [
-            {
-              "name": "ProtonMail",
-              "category": "Communication",
-              "section": "Encrypted Email",
-              "fields": [
-                "description"
-              ]
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2024-09-27",
       "sha": "376a2ebe1336c956ef0b8f14b829bb12ede3c589",
       "pr": {
         "number": 286,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/286",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1405,13 +1455,39 @@
       }
     },
     {
+      "date": "2024-09-27",
+      "sha": "02231fb0a59ee43f93c6d0143640284cb7587d71",
+      "pr": {
+        "number": 285,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/285",
+        "author": "SadMadLad",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "ProtonMail",
+              "category": "Communication",
+              "section": "Encrypted Email",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
       "date": "2024-09-26",
       "sha": "874dbdacae9c71cea100c85dc2b05bd348d20173",
       "pr": {
         "number": 284,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/284",
         "author": "catbash",
-        "authorAvatar": "https://github.com/catbash.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/88514774?v=4"
       },
       "changes": {
         "services": {
@@ -1456,7 +1532,7 @@
         "number": 277,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/277",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1474,20 +1550,23 @@
     },
     {
       "date": "2024-09-19",
-      "sha": "229bae1e00b1c1c4c937a57121a71e3a079a8792",
+      "sha": "a539b1dd64eba2d9f68f3a63c4f2b170fc31fcef",
       "pr": {
-        "number": 276,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/276",
+        "number": 272,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/272",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
-          "removed": [
+          "modified": [
             {
-              "name": "DN66",
-              "category": "Networking",
-              "section": "Ad Blockers"
+              "name": "PhotoPea",
+              "category": "Creativity",
+              "section": "Image Editors",
+              "fields": [
+                "openSource"
+              ]
             }
           ]
         },
@@ -1502,7 +1581,7 @@
         "number": 275,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/275",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1528,7 +1607,7 @@
         "number": 274,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/274",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1546,23 +1625,20 @@
     },
     {
       "date": "2024-09-19",
-      "sha": "a539b1dd64eba2d9f68f3a63c4f2b170fc31fcef",
+      "sha": "229bae1e00b1c1c4c937a57121a71e3a079a8792",
       "pr": {
-        "number": 272,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/272",
+        "number": 276,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/276",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
-          "modified": [
+          "removed": [
             {
-              "name": "PhotoPea",
-              "category": "Creativity",
-              "section": "Image Editors",
-              "fields": [
-                "openSource"
-              ]
+              "name": "DN66",
+              "category": "Networking",
+              "section": "Ad Blockers"
             }
           ]
         },
@@ -1577,7 +1653,7 @@
         "number": 270,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/270",
         "author": "SadMadLad",
-        "authorAvatar": "https://github.com/SadMadLad.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/74383721?v=4"
       },
       "changes": {
         "services": {
@@ -1600,7 +1676,7 @@
         "number": 265,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/265",
         "author": "smspool",
-        "authorAvatar": "https://github.com/smspool.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/113311275?v=4"
       },
       "changes": {
         "services": {
@@ -1626,7 +1702,7 @@
         "number": 262,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/262",
         "author": "brnsuh",
-        "authorAvatar": "https://github.com/brnsuh.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/148950769?v=4"
       },
       "changes": {
         "services": {
@@ -1653,7 +1729,7 @@
         "number": 258,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/258",
         "author": "azzamsa",
-        "authorAvatar": "https://github.com/azzamsa.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/17734314?v=4"
       },
       "changes": {
         "services": {
@@ -1679,7 +1755,7 @@
         "number": 253,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/253",
         "author": "trucke",
-        "authorAvatar": "https://github.com/trucke.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/46195120?v=4"
       },
       "changes": {
         "services": {
@@ -1702,7 +1778,7 @@
         "number": 248,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/248",
         "author": "smspool",
-        "authorAvatar": "https://github.com/smspool.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/113311275?v=4"
       },
       "changes": {
         "services": {
@@ -1746,7 +1822,7 @@
         "number": 244,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/244",
         "author": "poegl",
-        "authorAvatar": "https://github.com/poegl.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/57896970?v=4"
       },
       "changes": {
         "services": {
@@ -1755,6 +1831,35 @@
               "name": "Cromite",
               "category": "Essentials",
               "section": "Browsers"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-05-14",
+      "sha": "e9b1fee82705ca9b52a9db6e081d46bc4c417f01",
+      "pr": null,
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "RethinkDNS & Firewall",
+              "category": "Networking",
+              "section": "DNS Clients",
+              "fields": [
+                "androidApp"
+              ]
+            },
+            {
+              "name": "RethinkDNS & Firewall",
+              "category": "Security Tools",
+              "section": "Mobile Apps",
+              "fields": [
+                "url"
+              ]
             }
           ]
         },
@@ -1801,35 +1906,6 @@
       }
     },
     {
-      "date": "2024-05-14",
-      "sha": "e9b1fee82705ca9b52a9db6e081d46bc4c417f01",
-      "pr": null,
-      "changes": {
-        "services": {
-          "modified": [
-            {
-              "name": "RethinkDNS & Firewall",
-              "category": "Networking",
-              "section": "DNS Clients",
-              "fields": [
-                "androidApp"
-              ]
-            },
-            {
-              "name": "RethinkDNS & Firewall",
-              "category": "Security Tools",
-              "section": "Mobile Apps",
-              "fields": [
-                "url"
-              ]
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
       "date": "2024-04-29",
       "sha": "2e1e2f81063a2a87365058fb26f8db7cf28acf8a",
       "pr": {
@@ -1862,7 +1938,7 @@
         "number": 230,
         "url": "https://github.com/Lissy93/awesome-privacy/pull/230",
         "author": "lamtrinhdev",
-        "authorAvatar": "https://github.com/lamtrinhdev.png?size=40"
+        "authorAvatar": "https://avatars.githubusercontent.com/u/49742151?v=4"
       },
       "changes": {
         "services": {
@@ -1895,6 +1971,27 @@
               "name": "Brave Search",
               "category": "Essentials",
               "section": "Search Engines"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-04-20",
+      "sha": "b5a69fc359c36a1bb7ea05c0e29947f73930e189",
+      "pr": {
+        "number": 233,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/233"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Pass",
+              "category": "Essentials",
+              "section": "Password Managers"
             }
           ]
         },
@@ -1940,27 +2037,6 @@
               "fields": [
                 "url"
               ]
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2024-04-20",
-      "sha": "b5a69fc359c36a1bb7ea05c0e29947f73930e189",
-      "pr": {
-        "number": 233,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/233"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "Pass",
-              "category": "Essentials",
-              "section": "Password Managers"
             }
           ]
         },
@@ -2585,58 +2661,66 @@
       "pr": null,
       "changes": {
         "services": {
-          "added": [
+          "renamed": [
             {
+              "previousName": "RethinkDNS + Firewall",
+              "name": "RethinkDNS & Firewall",
+              "from": {
+                "category": "Networking",
+                "section": "Ad Blockers"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Ad Blockers"
+              }
+            },
+            {
+              "previousName": "RethinkDNS + Firewall",
+              "name": "RethinkDNS & Firewall",
+              "from": {
+                "category": "Networking",
+                "section": "DNS Clients"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "DNS Clients"
+              }
+            },
+            {
+              "previousName": "RethinkDNS + Firewall",
+              "name": "RethinkDNS & Firewall",
+              "from": {
+                "category": "Networking",
+                "section": "Firewalls"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Firewalls"
+              }
+            },
+            {
+              "previousName": "RethinkDNS + Firewall",
+              "name": "RethinkDNS & Firewall",
+              "from": {
+                "category": "Security Tools",
+                "section": "Mobile Apps"
+              },
+              "to": {
+                "category": "Security Tools",
+                "section": "Mobile Apps"
+              }
+            },
+            {
+              "previousName": "Tox + qTox client",
               "name": "Tox & qTox client",
-              "category": "Communication",
-              "section": "P2P Messaging"
-            },
-            {
-              "name": "RethinkDNS & Firewall",
-              "category": "Networking",
-              "section": "Ad Blockers"
-            },
-            {
-              "name": "RethinkDNS & Firewall",
-              "category": "Networking",
-              "section": "DNS Clients"
-            },
-            {
-              "name": "RethinkDNS & Firewall",
-              "category": "Networking",
-              "section": "Firewalls"
-            },
-            {
-              "name": "RethinkDNS & Firewall",
-              "category": "Security Tools",
-              "section": "Mobile Apps"
-            }
-          ],
-          "removed": [
-            {
-              "name": "Tox + qTox client",
-              "category": "Communication",
-              "section": "P2P Messaging"
-            },
-            {
-              "name": "RethinkDNS + Firewall",
-              "category": "Networking",
-              "section": "Ad Blockers"
-            },
-            {
-              "name": "RethinkDNS + Firewall",
-              "category": "Networking",
-              "section": "DNS Clients"
-            },
-            {
-              "name": "RethinkDNS + Firewall",
-              "category": "Networking",
-              "section": "Firewalls"
-            },
-            {
-              "name": "RethinkDNS + Firewall",
-              "category": "Security Tools",
-              "section": "Mobile Apps"
+              "from": {
+                "category": "Communication",
+                "section": "P2P Messaging"
+              },
+              "to": {
+                "category": "Communication",
+                "section": "P2P Messaging"
+              }
             }
           ]
         },
@@ -2739,75 +2823,6 @@
     },
     {
       "date": "2024-03-12",
-      "sha": "639eb6794696341f32b582c50a0ecd7a91db52d1",
-      "pr": {
-        "number": 219,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/219",
-        "author": "maybeanerd",
-        "authorAvatar": "https://github.com/maybeanerd.png?size=40"
-      },
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "2FAS",
-              "category": "Essentials",
-              "section": "2-Factor Authentication"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2024-03-12",
-      "sha": "b2113d1d8325447daf6cfa9c12a53f1fbcf33928",
-      "pr": null,
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "Blender",
-              "category": "Creativity",
-              "section": "3D Graphics"
-            },
-            {
-              "name": "Wings3D",
-              "category": "Creativity",
-              "section": "3D Graphics"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2024-03-12",
-      "sha": "1f79ce2ce71e6ab3526fd0995b94df67252510f2",
-      "pr": null,
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "Audacity",
-              "category": "Creativity",
-              "section": "Audio Editors & Recorders"
-            },
-            {
-              "name": "OBS Studio",
-              "category": "Creativity",
-              "section": "Casting & Streaming"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2024-03-12",
       "sha": "e33ee115950f0d56c764e5d0581e1d697afbb63f",
       "pr": null,
       "changes": {
@@ -2840,6 +2855,114 @@
               "fields": [
                 "icon"
               ]
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-03-12",
+      "sha": "b2113d1d8325447daf6cfa9c12a53f1fbcf33928",
+      "pr": null,
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Blender",
+              "category": "Creativity",
+              "section": "3D Graphics"
+            },
+            {
+              "name": "Wings3D",
+              "category": "Creativity",
+              "section": "3D Graphics"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-03-12",
+      "sha": "639eb6794696341f32b582c50a0ecd7a91db52d1",
+      "pr": {
+        "number": 219,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/219",
+        "author": "maybeanerd",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/18548570?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "2FAS",
+              "category": "Essentials",
+              "section": "2-Factor Authentication"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-03-12",
+      "sha": "1f79ce2ce71e6ab3526fd0995b94df67252510f2",
+      "pr": null,
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Audacity",
+              "category": "Creativity",
+              "section": "Audio Editors & Recorders"
+            },
+            {
+              "name": "OBS Studio",
+              "category": "Creativity",
+              "section": "Casting & Streaming"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-03-11",
+      "sha": "ec9119761c83aeafc5cf436dc2306280212c2470",
+      "pr": null,
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Krita",
+              "category": "Creativity",
+              "section": "Image Editors"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2024-03-11",
+      "sha": "afc1bddb019a762fc3f2741547ffdc205c0bfe19",
+      "pr": {
+        "number": 220,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/220"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Gimp",
+              "category": "Creativity",
+              "section": "Image Editors"
             }
           ]
         },
@@ -2910,13 +3033,13 @@
     },
     {
       "date": "2024-03-11",
-      "sha": "ec9119761c83aeafc5cf436dc2306280212c2470",
+      "sha": "18d87f28c0cd393052d21fae15e9ca492b9a4243",
       "pr": null,
       "changes": {
         "services": {
           "added": [
             {
-              "name": "Krita",
+              "name": "InkScape",
               "category": "Creativity",
               "section": "Image Editors"
             }
@@ -2973,46 +3096,905 @@
       }
     },
     {
-      "date": "2024-03-11",
-      "sha": "18d87f28c0cd393052d21fae15e9ca492b9a4243",
-      "pr": null,
-      "changes": {
-        "services": {
-          "added": [
-            {
-              "name": "InkScape",
-              "category": "Creativity",
-              "section": "Image Editors"
-            }
-          ]
-        },
-        "sections": {},
-        "categories": {}
-      }
-    },
-    {
-      "date": "2024-03-11",
-      "sha": "afc1bddb019a762fc3f2741547ffdc205c0bfe19",
+      "date": "2024-03-02",
+      "sha": "9d1bc2480ddd364c385f6ad6d9e0722202fe6205",
       "pr": {
-        "number": 220,
-        "url": "https://github.com/Lissy93/awesome-privacy/pull/220"
+        "number": 216,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/216",
+        "author": "rastiqdev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/62338646?v=4"
       },
       "changes": {
         "services": {
           "added": [
             {
-              "name": "Gimp",
-              "category": "Creativity",
-              "section": "Image Editors"
+              "name": "mailcow",
+              "category": "Networking",
+              "section": "Mail Servers"
             }
           ]
-        },
-        "sections": {},
-        "categories": {}
+        }
+      }
+    },
+    {
+      "date": "2024-02-26",
+      "sha": "7a3286122e197a9b5836cfcd73fca768ccf6f50e",
+      "pr": {
+        "number": 213,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/213",
+        "author": "thezacharytaylor",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/21206039?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "Tutanota",
+              "name": "Tuta",
+              "from": {
+                "category": "Communication",
+                "section": "Encrypted Email"
+              },
+              "to": {
+                "category": "Communication",
+                "section": "Encrypted Email"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "sha": "f4332e985d4064559535b16397d9c35fdce587eb",
+      "pr": {
+        "number": 211,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/211",
+        "author": "titanism",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/101466223?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Skiff",
+              "category": "Communication",
+              "section": "Encrypted Email"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "sha": "48b4e2c0e5c66e573b3ab3bd567bf1c614d42473",
+      "pr": {
+        "number": 203,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/203",
+        "author": "ghost",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/10137?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "Insular",
+              "category": "Security Tools",
+              "section": "Mobile Apps",
+              "fields": [
+                "url"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "sha": "079c3242b4ca058a8ccb252da4dccd4f30870542",
+      "pr": {
+        "number": 207,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/207",
+        "author": "rivst",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/69579692?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "Firefox",
+              "category": "Essentials",
+              "section": "Browsers",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "sha": "1c9aef3329f9ed4b5c4e89b7ab9d780694183552",
+      "pr": {
+        "number": 202,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/202",
+        "author": "HammyHavoc",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/503951?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "OpenSense",
+              "name": "OPNSense",
+              "from": {
+                "category": "Networking",
+                "section": "Firewalls"
+              },
+              "to": {
+                "category": "Networking",
+                "section": "Firewalls"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2024-01-03",
+      "sha": "3e760b3a774e6b65f62866dc3effa5b504a4e10f",
+      "pr": {
+        "number": 201,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/201",
+        "author": "titanism",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/101466223?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Forward Email",
+              "category": "Communication",
+              "section": "Encrypted Email"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-11-11",
+      "sha": "02125ec429ec1ce9c5acdec1604703cb058a7887",
+      "pr": {
+        "number": 187,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/187",
+        "author": "Sean12697",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/22508776?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "ProtonPass",
+              "category": "Essentials",
+              "section": "Password Managers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-10-11",
+      "sha": "26817ef8c36183cb7589b29134531a35ce4e2beb",
+      "pr": {
+        "number": 191,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/191",
+        "author": "edent",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/837136?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "ClamTk",
+              "category": "Operating Systems",
+              "section": "Linux Defenses",
+              "fields": [
+                "url"
+              ]
+            },
+            {
+              "name": "Privacy.com",
+              "category": "Finance",
+              "section": "Virtual Credit Cards",
+              "fields": [
+                "url"
+              ]
+            },
+            {
+              "name": "Track Me Not",
+              "category": "Security Tools",
+              "section": "Browser Extensions",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-10-08",
+      "sha": "88c0cb324458962c52691a05384aab459bf740b2",
+      "pr": {
+        "number": 91,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/91",
+        "author": "Lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Mojeek",
+              "category": "Essentials",
+              "section": "Search Engines"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-08-28",
+      "sha": "8ee48cc161dd204f6eea70e8988ad3d4eb17e0c7",
+      "pr": {
+        "number": 180,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/180",
+        "author": "gabrielvicenteYT",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/68158102?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "Session",
+              "category": "Communication",
+              "section": "Encrypted Messaging",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-02-19",
+      "sha": "ab9150fa71812ae4c395d499f1500d3c91b2b54c",
+      "pr": {
+        "number": 156,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/156",
+        "author": "ZhymabekRoman",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/61125068?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "SecureDNS",
+              "category": "Networking",
+              "section": "DNS Providers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-02-12",
+      "sha": "39fd929067cb8e48c12314e88ec42436fd30e024",
+      "pr": {
+        "number": 155,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/155",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "moved": [
+            {
+              "name": "Matrix",
+              "from": {
+                "category": "Communication",
+                "section": "P2P Messaging"
+              },
+              "to": {
+                "category": "Communication",
+                "section": "Encrypted Messaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-01-29",
+      "sha": "df686cd77a1ff89ba9a318089d46c1585b63b572",
+      "pr": {
+        "number": 154,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/154",
+        "author": "ksharizard",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/78494833?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Silence",
+              "category": "Communication",
+              "section": "Encrypted Messaging"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-01-29",
+      "sha": "cae7b723a635c2035907db9d2cbc7f42d17f92e2",
+      "pr": {
+        "number": 153,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/153",
+        "author": "AlexOgden",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1379601?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "TorBirdy",
+              "category": "Communication",
+              "section": "Email Security Tools"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2023-01-01",
+      "sha": "6cf287d925558028acb263fbafa7eb412abfed17",
+      "pr": {
+        "number": 142,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/142",
+        "author": "samsapti",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/26819407?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Bibliogram",
+              "category": "Social",
+              "section": "Proxy Sites"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-12-17",
+      "sha": "bc99ed2b8704c26e3165320efe62dd863521b26e",
+      "pr": {
+        "number": 136,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/136",
+        "author": "magical-heyrovsky",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/101060148?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "CodeBerg",
+              "name": "Codeberg",
+              "from": {
+                "category": "Development",
+                "section": "Code Hosting"
+              },
+              "to": {
+                "category": "Development",
+                "section": "Code Hosting"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-11-26",
+      "sha": "9bada64f52e3504fb7470ccecbbb5a2b2bf545f7",
+      "pr": {
+        "number": 117,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/117",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Vanilla Cookie Manager",
+              "category": "Security Tools",
+              "section": "Browser Extensions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-11-26",
+      "sha": "303cc2f8a124db8a9d0a2b5562725811069ceaa5",
+      "pr": {
+        "number": 123,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/123",
+        "author": "AshboDev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/14421977?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "NextCloud",
+              "category": "Productivity",
+              "section": "Backup and Sync",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-11-25",
+      "sha": "37a568f94afd5a677598f080186f10e202108678",
+      "pr": {
+        "number": 127,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/127",
+        "author": "EgosOwn",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/47700879?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "MoneroSMS",
+              "category": "Communication",
+              "section": "Virtual Phone Numbers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-10-23",
+      "sha": "f987d9969923ee65464d0de187183719af278998",
+      "pr": {
+        "number": 109,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/109",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Off-The-Record",
+              "category": "Communication",
+              "section": "Encrypted Messaging"
+            }
+          ],
+          "added": [
+            {
+              "name": "XMPP",
+              "category": "Communication",
+              "section": "Encrypted Messaging"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-10-23",
+      "sha": "97087e9763354540028fc571aca552a83464cc1d",
+      "pr": {
+        "number": 112,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/112",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "Librewolf",
+              "name": "LibreWolf",
+              "from": {
+                "category": "Essentials",
+                "section": "Browsers"
+              },
+              "to": {
+                "category": "Essentials",
+                "section": "Browsers"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-10-22",
+      "sha": "538f2364d3dbab3efdce45e3797da90f09da59b0",
+      "pr": {
+        "number": 110,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/110",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Movim",
+              "category": "Social",
+              "section": "Blogging Platforms"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-10-16",
+      "sha": "da7374ad750bd07bc42649cfdd09edd14901cc40",
+      "pr": {
+        "number": 108,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/108",
+        "author": "baddate",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/37013819?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "Bitwarden",
+              "category": "Essentials",
+              "section": "Password Managers",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-10-09",
+      "sha": "7dd8e9943c9a138710901ecf1bf4775b6167629a",
+      "pr": {
+        "number": 104,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/104",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "RainLoop",
+              "category": "Communication",
+              "section": "Email Clients"
+            }
+          ],
+          "added": [
+            {
+              "name": "SnappyMail",
+              "category": "Communication",
+              "section": "Email Clients"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-08-16",
+      "sha": "1b8fb78a4673bd93282dbbd6f715871189ec9f5f",
+      "pr": {
+        "number": 92,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/92",
+        "author": "TwilightSublime",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/84061672?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "AFFiNE",
+              "category": "Productivity",
+              "section": "Digital Notes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-08-13",
+      "sha": "61204318c73bb25efae3567bf64e55522b69cc47",
+      "pr": {
+        "number": 90,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/90",
+        "author": "jamescridland",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/231941?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "BitWarden",
+              "name": "Bitwarden",
+              "from": {
+                "category": "Essentials",
+                "section": "Password Managers"
+              },
+              "to": {
+                "category": "Essentials",
+                "section": "Password Managers"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-29",
+      "sha": "09e87c7fe4db0e76161d6a88b0ed3d6aafc3b22c",
+      "pr": {
+        "number": 70,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/70",
+        "author": "Gusted",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/25481501?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "LocalCDN",
+              "category": "Security Tools",
+              "section": "Browser Extensions",
+              "fields": [
+                "url"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-27",
+      "sha": "615fc63dbbcfc19a5fb911d893c2bc40ad33ab69",
+      "pr": {
+        "number": 61,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/61",
+        "author": "pnodet",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/5941125?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "Ricochet",
+              "name": "Ricochet Refresh",
+              "from": {
+                "category": "Communication",
+                "section": "P2P Messaging"
+              },
+              "to": {
+                "category": "Communication",
+                "section": "P2P Messaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-26",
+      "sha": "fd87f80e3777c170e28f035b7049f3bde57c69a6",
+      "pr": {
+        "number": 56,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/56",
+        "author": "TwilightSublime",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/84061672?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "UTM",
+              "category": "Utilities",
+              "section": "Virtual Machines"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-26",
+      "sha": "81ed2551032e527bf5b752df5608411f91a12150",
+      "pr": {
+        "number": 59,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/59",
+        "author": "slade991",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/10143703?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Servers Guru",
+              "category": "Networking",
+              "section": "Cloud Hosting"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-25",
+      "sha": "690d3e40da8b0ef98b93ba5bf066dc88a84027cb",
+      "pr": {
+        "number": 49,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/49",
+        "author": "lilithium-hydride",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/78992082?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Insular",
+              "category": "Security Tools",
+              "section": "Mobile Apps"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-25",
+      "sha": "131ee17431d09301025cca74cfa7fa372d19dd4a",
+      "pr": {
+        "number": 47,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/47",
+        "author": "lilithium-hydride",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/78992082?v=4"
+      },
+      "changes": {
+        "services": {
+          "renamed": [
+            {
+              "previousName": "FairMail",
+              "name": "FairEmail",
+              "from": {
+                "category": "Communication",
+                "section": "Email Clients"
+              },
+              "to": {
+                "category": "Communication",
+                "section": "Email Clients"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-21",
+      "sha": "e192c0a4ae62d6d5dc4f3d163825b6b90205527a",
+      "pr": {
+        "number": 36,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/36",
+        "author": "kolaente",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/13721712?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Vikunja",
+              "category": "Productivity",
+              "section": "Cloud Productivity Suites"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "sha": "60f4dbb1d011f460385c7fe29b92bf0d122cd615",
+      "pr": {
+        "number": 33,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/33",
+        "author": "colenh",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/40342475?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "ScriptSafe",
+              "category": "Security Tools",
+              "section": "Browser Extensions",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2022-07-13",
+      "sha": "24dca25961a0fed853190ed3c70da27bc142d2d1",
+      "pr": {
+        "number": 29,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/29",
+        "author": "ghost",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/10137?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "Brave Browser",
+              "category": "Essentials",
+              "section": "Browsers",
+              "fields": [
+                "url"
+              ]
+            }
+          ]
+        }
       }
     }
   ],
   "rejections": [
+    {
+      "date": "2026-04-15",
+      "title": "Add FreeFile ITR to Finance category",
+      "pr": {
+        "number": 500,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/500",
+        "author": "rohitthink",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/271015233?v=4"
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "title": "Add Convert.rocks to File Converters",
+      "pr": {
+        "number": 499,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/499",
+        "author": "glebr2d2",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/6093000?v=4"
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "title": "Adds MirrorMask to Mac OS Defences",
+      "pr": {
+        "number": 498,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/498",
+        "author": "NanoMeko",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/3164505?v=4"
+      }
+    },
     {
       "date": "2026-04-13",
       "title": "Add DarkVPS to VPS Hosting",
@@ -3061,6 +4043,16 @@
         "url": "https://github.com/Lissy93/awesome-privacy/pull/488",
         "author": "momenbasel",
         "authorAvatar": "https://avatars.githubusercontent.com/u/8724766?v=4"
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "title": "Add anon.li Alias & Drop",
+      "pr": {
+        "number": 483,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/483",
+        "author": "anondotli",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/250000431?v=4"
       }
     },
     {
