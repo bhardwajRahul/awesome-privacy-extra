@@ -1,4 +1,5 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 const githubHeaders = (): Record<string, string> => {
   const headers: Record<string, string> = {
@@ -18,11 +19,11 @@ const fetchFromGitHub = async (
 
   const [infoRes, langsRes, tagsRes, contribRes, commitsRes] =
     await Promise.all([
-      fetch(base, { headers }),
-      fetch(`${base}/languages`, { headers }),
-      fetch(`${base}/tags`, { headers }),
-      fetch(`${base}/contributors`, { headers }),
-      fetch(`${base}/commits`, { headers }),
+      safeFetch(base, { headers }),
+      safeFetch(`${base}/languages`, { headers }),
+      safeFetch(`${base}/tags`, { headers }),
+      safeFetch(`${base}/contributors`, { headers }),
+      safeFetch(`${base}/commits`, { headers }),
     ]);
 
   if (!infoRes.ok) {
@@ -103,7 +104,7 @@ const fetchFromGitHub = async (
 const fetchFromWorker = async (
   github: string,
 ): Promise<GitHubStatsResponse | null> => {
-  const res = await fetch(`https://repo-info.as93.workers.dev/${github}`);
+  const res = await safeFetch(`https://repo-info.as93.workers.dev/${github}`);
   if (!res.ok) return null;
   return res.json();
 };

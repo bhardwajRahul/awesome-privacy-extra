@@ -1,11 +1,12 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 export const fetchIosInfo = async (
   iosUrl: string,
 ): Promise<IoSApiResponse | null> => {
   const endpoint = `https://ios-app-info.as93.net?appStoreUrl=${iosUrl}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error('iOS', `HTTP ${res.status} for ${iosUrl} (${endpoint})`);
       return null;

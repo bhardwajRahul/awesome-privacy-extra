@@ -1,11 +1,12 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 export const fetchTosdrPrivacy = async (
   serviceId: string,
 ): Promise<PrivacyPolicyResponse | null> => {
   const endpoint = `https://privacy-policies.as93.workers.dev/${serviceId}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error(
         'ToS;DR',

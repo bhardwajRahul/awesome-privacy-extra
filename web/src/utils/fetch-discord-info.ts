@@ -1,11 +1,12 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 export const fetchDiscordInfo = async (
   discordInvite: string,
 ): Promise<DiscordInfo | null> => {
   const endpoint = `https://discord-invite-info.as93.net/${discordInvite}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error('Discord', `HTTP ${res.status} for ${discordInvite} (${endpoint})`);
       return null;

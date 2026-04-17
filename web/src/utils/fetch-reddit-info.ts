@@ -1,11 +1,12 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 export const fetchRedditInfo = async (
   subreddit: string,
 ): Promise<RedditData | null> => {
   const endpoint = `https://subreddit-info.as93.net/${subreddit}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error('Reddit', `HTTP ${res.status} for r/${subreddit} (${endpoint})`);
       return null;

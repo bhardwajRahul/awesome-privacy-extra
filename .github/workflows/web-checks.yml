@@ -17,12 +17,13 @@ jobs:
         working-directory: web
     steps:
       - uses: actions/checkout@v5
+      - run: corepack enable
       - uses: actions/setup-node@v5
         with:
           node-version-file: web/.nvmrc
           cache: yarn
           cache-dependency-path: web/yarn.lock
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn lint
 
   format:
@@ -33,12 +34,13 @@ jobs:
         working-directory: web
     steps:
       - uses: actions/checkout@v5
+      - run: corepack enable
       - uses: actions/setup-node@v5
         with:
           node-version-file: web/.nvmrc
           cache: yarn
           cache-dependency-path: web/yarn.lock
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn format:check
 
   typecheck:
@@ -49,12 +51,13 @@ jobs:
         working-directory: web
     steps:
       - uses: actions/checkout@v5
+      - run: corepack enable
       - uses: actions/setup-node@v5
         with:
           node-version-file: web/.nvmrc
           cache: yarn
           cache-dependency-path: web/yarn.lock
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn typecheck
 
   test:
@@ -65,12 +68,13 @@ jobs:
         working-directory: web
     steps:
       - uses: actions/checkout@v5
+      - run: corepack enable
       - uses: actions/setup-node@v5
         with:
           node-version-file: web/.nvmrc
           cache: yarn
           cache-dependency-path: web/yarn.lock
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn test
 
   summary:

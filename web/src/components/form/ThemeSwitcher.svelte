@@ -1,41 +1,36 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { writable } from 'svelte/store';
 
-  // Define a store for the theme which reacts to changes
-  let theme = writable('dark');
+  let theme = $state('dark');
 
-  // On component mount, check local storage for a theme setting
   onMount(() => {
     const storedTheme = localStorage.getItem('theme');
-    theme.set(storedTheme || 'dark');
-    applyTheme(storedTheme || 'dark');
+    theme = storedTheme || 'dark';
+    applyTheme(theme);
   });
 
-  // Function to toggle theme between light and dark
   function toggleTheme(): void {
-    theme.update((currentTheme) => {
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newTheme);
-      applyTheme(newTheme);
-      return newTheme;
-    });
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', newTheme);
+    theme = newTheme;
+    applyTheme(newTheme);
   }
 
-  // Function to apply the theme by setting the attribute on the <html> element
   function applyTheme(selectedTheme: string): void {
     document.documentElement.setAttribute('data-theme', selectedTheme);
   }
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="theme-switcher" on:click={toggleTheme}>
-  <div class={`toggle ${$theme}`}>
+<button
+  class="theme-switcher"
+  onclick={toggleTheme}
+  aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+>
+  <div class={`toggle ${theme}`}>
     <span class="theme-icon">🌘</span>
     <span class="theme-icon">☀️</span>
   </div>
-</div>
+</button>
 
 <style lang="scss">
   .theme-switcher {

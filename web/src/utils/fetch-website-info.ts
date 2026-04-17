@@ -1,11 +1,12 @@
 import { error } from './logger';
+import { safeFetch } from './safe-fetch';
 
 export const fetchWebsiteInfo = async (
   url: string,
 ): Promise<WebsiteData | null> => {
   const endpoint = `https://site-info-fetch.as93.workers.dev/?url=${url}`;
   try {
-    const res = await fetch(endpoint);
+    const res = await safeFetch(endpoint);
     if (!res.ok) {
       error('Website', `HTTP ${res.status} for ${url} (${endpoint})`);
       return null;
