@@ -2570,15 +2570,6 @@ categories:
           A shell script application to manage ad-blocking, Dnsmasq logging, Entware and pixelserv-tls installations
           and more on supported routers running Asuswrt-Merlin firmware, including its forks.
 
-      - name: BlockParty
-        url: https://github.com/krishkumar/BlockParty
-        icon: https://user-images.githubusercontent.com/425580/202258429-28da1274-2fb6-49dc-930c-3833f929b65e.png
-        github: krishkumar/BlockParty
-        followWith: iOS/ MacOS
-        description: |
-          Native Apple (Swift) apps, for system-wide ad-blocking. Can be customized with custom host lists,
-          primarily aimed for just ad-blocking.
-
       - name: hBlock
         url: https://hblock.molinero.dev
         icon: https://raw.githubusercontent.com/hectorm/hblock/master/resources/logo/bitmaps/logo-shield-ffffff-h512.png
