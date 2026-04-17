@@ -4289,14 +4289,6 @@ categories:
         description: |
           Easily configure macOS security settings from the terminal.
 
-      - name: Fortress
-        url: https://github.com/essandess/macOS-Fortress
-        followWith: Mac OS
-        github: essandess/macOS-Fortress
-        description: |
-          Kernel-level, OS-level, and client-level security for macOS. With a Firewall, Blackhole, and Privatizing Proxy for Trackers, Attackers, Malware, Adware, and Spammers; with On-Demand and On-Access Anti-Virus Scanning.
-
-
     ##########################
     ###### Anti-Malware ######
     ##########################
