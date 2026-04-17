@@ -4615,14 +4615,6 @@ categories:
           per month) with no fees, apps and support is good. There is a premium plan
           for $10/month, with 1% cashback and 36 cards/month.
 
-      - name: Revolut Premium
-        url: https://www.revolut.com/
-        tosdrId: 2310
-        description: |
-          Revolut is more of a digital bank account, and identity checks are required
-          to sign up. Virtual cards are only available on Premium/ Metal accounts, which
-          start at $7/month.
-
       - name: MySudo
         url: https://mysudo.com
         tosdrId: 1352
