@@ -4769,13 +4769,6 @@ categories:
         url: https://github.com/nostr-protocol/nostr
         github: https://github.com/nostr-protocol
 
-      - name: Minds
-        description: |
-          A social media platform designed to foster open conversations and community
-          engagement. Rewards content creation.
-        url: https://www.minds.com
-        github: minds/minds
-
       - name: Lemmy
         url: https://join-lemmy.org
         github: LemmyNet/lemmy
