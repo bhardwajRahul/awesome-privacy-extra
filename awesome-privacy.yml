@@ -4161,12 +4161,6 @@ categories:
         description: |
           Internet traffic control and monitoring tool.
 
-      - name: Sticky-Keys-Slayer
-        url: https://github.com/linuz/Sticky-Keys-Slayer
-        github: linuz/Sticky-Keys-Slayer
-        description: |
-          Scans for accessibility tools backdoors via RDP.
-
       - name: SigCheck
         url: https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck
         description: |
@@ -4211,17 +4205,6 @@ categories:
         url: https://schiffer.tech/camwings.html
         description: |
           Blocks unauthorized webcam access.
-
-      - name: SpyDish
-        url: https://github.com/mirinsoft/spydish
-        github: mirinsoft/spydish
-        description: |
-          Open source GUI app built upon PowerShell, allowing you to perform a quick and easy privacy check, on Windows 10 systems.
-
-      - name: PrivaZer
-        url: https://privazer.com/
-        description: |
-          Good alternative to CCleaner, for deleting unnecessary data - logs, cache, history, etc.
 
       wordOfWarning: |
         (The above software was last tested on 01/05/20).
