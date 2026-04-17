@@ -1628,17 +1628,6 @@ categories:
           also a great utility to stop certain apps from collecting data and tracking your actions
           while running in the background. See on [F-Droid](https://f-droid.org/en/packages/superfreeze.tool.android)
 
-      - name: Haven
-        url: https://guardianproject.github.io/haven/
-        icon: https://play-lh.googleusercontent.com/PdE-P3oTwa6fFKqQrSuYS1S7Aa_bIq-GECLhj8kvTzXdSc6S_hUtW2hUx0aCP-3h0pQ=w240-h480
-        github: guardianproject/haven
-        androidApp: org.havenapp.main
-        tosdrId: 682
-        description: |
-          Allows you to protect yourself, your personal space and your possessions - without
-          compromising on security. Leveraging device sensors to monitor nearby space, Haven was
-          developed by The Guardian Project, in partnership with Edward Snowden.
-
       - name: Secure Task
         url: https://play.google.com/store/apps/details?id=com.balda.securetask
         icon: https://play-lh.googleusercontent.com/Xb_KbjGC3J8xrj1QmZqYhUq1A6aww5ikFuXfCqJonww-vz38y6xUjHzvH65AGrQU9P4=s48
