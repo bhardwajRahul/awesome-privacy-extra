@@ -3098,7 +3098,7 @@ categories:
       - name: Nextcloud Calendar
         url: https://apps.nextcloud.com/apps/calendar
         github: nextcloud/calendar
-        openSource: true
+        followWith: Self-Hosted
         icon: https://raw.githubusercontent.com/nextcloud/calendar/refs/heads/main/img/favicon.png
         description: |
           Calendar app for the self-hosted Nextcloud platform. Uses CalDAV for
