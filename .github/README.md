@@ -26,7 +26,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 <summary>📋 <b>Contents</b></summary>
 
 - **Essentials**
-	- [Password Managers](#password-managers) (7)
+	- [Password Managers](#password-managers) (6)
 	- [2-Factor Authentication](#2-factor-authentication) (11)
 	- [File Encryption](#file-encryption) (3)
 	- [Browsers](#browsers) (5)
@@ -43,7 +43,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Team Collaboration](#team-collaboration) (5)
 - **Security Tools**
 	- [Browser Extensions](#browser-extensions) (24)
-	- [Mobile Apps](#mobile-apps) (25)
+	- [Mobile Apps](#mobile-apps) (23)
 	- [Online Tools](#online-tools) (17)
 - **Networking**
 	- [Virtual Private Networks](#virtual-private-networks) (7)
@@ -53,7 +53,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [DNS Providers](#dns-providers) (3)
 	- [DNS Clients](#dns-clients) (6)
 	- [Firewalls](#firewalls) (13)
-	- [Ad Blockers](#ad-blockers) (7)
+	- [Ad Blockers](#ad-blockers) (6)
 	- [Host Block Lists](#host-block-lists) (5)
 	- [Router Firmware](#router-firmware) (2)
 	- [Network Analysis](#network-analysis) (3)
@@ -68,7 +68,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Task Management](#task-management) (1)
 	- [Backup and Sync](#backup-and-sync) (4)
 	- [Cloud Productivity Suites](#cloud-productivity-suites) (5)
-	- [Encrypted Cloud Storage](#encrypted-cloud-storage) (7)
+	- [Encrypted Cloud Storage](#encrypted-cloud-storage) (6)
 	- [Secret Sharing](#secret-sharing) (3)
 	- [File Drop](#file-drop) (2)
 	- [Browser Sync](#browser-sync) (4)
@@ -82,8 +82,8 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Mobile Operating Systems](#mobile-operating-systems) (4)
 	- [Desktop Operating Systems](#desktop-operating-systems) (5)
 	- [Linux Defenses](#linux-defenses) (6)
-	- [Windows Defences](#windows-defences) (20)
-	- [Mac OS Defences](#mac-os-defences) (3)
+	- [Windows Defences](#windows-defences) (17)
+	- [Mac OS Defences](#mac-os-defences) (2)
 	- [Anti-Malware](#anti-malware) (2)
 - **Development**
 	- [Code Hosting](#code-hosting) (5)
@@ -91,14 +91,14 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Smart Home](#smart-home) (1)
 - **Finance**
 	- [Cryptocurrencies](#cryptocurrencies) (2)
-	- [Crypto Wallets](#crypto-wallets) (8)
+	- [Crypto Wallets](#crypto-wallets) (7)
 	- [Crypto Exchanges](#crypto-exchanges) (2)
-	- [Virtual Credit Cards](#virtual-credit-cards) (3)
+	- [Virtual Credit Cards](#virtual-credit-cards) (2)
 	- [Other Payment Methods](#other-payment-methods) (3)
 	- [Secure Budgeting](#secure-budgeting) (5)
 - **Social**
-	- [Social Networks](#social-networks) (5)
-	- [Video Platforms](#video-platforms) (3)
+	- [Social Networks](#social-networks) (4)
+	- [Video Platforms](#video-platforms) (2)
 	- [Blogging Platforms](#blogging-platforms) (6)
 	- [News Readers](#news-readers) (1)
 	- [Proxy Sites](#proxy-sites) (4)
@@ -136,13 +136,6 @@ corporations, governments, and hackers from logging, storing or selling your per
 		<summary>Stats</summary>
 
 		[![GitHub: lesspass/lesspass](https://img.shields.io/github/stars/lesspass/lesspass?style=flat&logo=github&label=lesspass&color=%235f53f4&cacheSeconds=3600)](https://github.com/lesspass/lesspass) [![LessPass on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=LessPass)](https://awesome-privacy.xyz/essentials/password-managers/lesspass)ㅤ 
-
-		</details>
-- **[<img src='https://icon.horse/icon/padloc.app' width='16' height='16' alt='icon' /> Padloc](https://padloc.app)** - A modern, open source password manager for individuals and teams. Beautiful, intuitive and dead simple to use. Apps available for all platforms and you can self-host it as well. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: padloc/padloc](https://img.shields.io/github/stars/padloc/padloc?style=flat&logo=github&label=padloc&color=%235f53f4&cacheSeconds=3600)](https://github.com/padloc/padloc) [![Padloc on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Padloc)](https://awesome-privacy.xyz/essentials/password-managers/padloc) [![Padloc on Google Play](https://img.shields.io/badge/-Padloc-3bd47f?style=flat&logo=android&logoColor=white)](https://play.google.com/store/apps/details?id=app.padloc) [![Padloc on App Store](https://img.shields.io/badge/-Padloc-0D96F6?style=flat&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/padloc/id1478877043)ㅤ 
 
 		</details>
 - **[<img src='https://icon.horse/icon/proton.me' width='16' height='16' alt='icon' /> ProtonPass](https://proton.me/pass)** - From the creators of ProtonMail, ProtonPass is a new addition to their suite of services. They have a full collection of user-friendly native mobile and desktop apps. ProtonPass is one of the few "tru[…](https://awesome-privacy.xyz/essentials/password-managers/protonpass "View full ProtonPass report") 
@@ -1144,13 +1137,6 @@ The following browser add-ons give you better control over what content is able 
 		[![SuperFreezZ on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=SuperFreezZ)](https://awesome-privacy.xyz/security-tools/mobile-apps/superfreezz)ㅤ 
 
 		</details>
-- **[<img src='https://play-lh.googleusercontent.com/PdE-P3oTwa6fFKqQrSuYS1S7Aa_bIq-GECLhj8kvTzXdSc6S_hUtW2hUx0aCP-3h0pQ=w240-h480' width='16' height='16' alt='icon' /> Haven](https://guardianproject.github.io/haven/)** - Allows you to protect yourself, your personal space and your possessions - without compromising on security. Leveraging device sensors to monitor nearby space, Haven was developed by The Guardian Proj[…](https://awesome-privacy.xyz/security-tools/mobile-apps/haven "View full Haven report") 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: guardianproject/haven](https://img.shields.io/github/stars/guardianproject/haven?style=flat&logo=github&label=haven&color=%235f53f4&cacheSeconds=3600)](https://github.com/guardianproject/haven) [![Privacy Policy](https://shields.tosdr.org/en_682.svg)](https://tosdr.org/en/service/682) [![Haven on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Haven)](https://awesome-privacy.xyz/security-tools/mobile-apps/haven) [![Haven on Google Play](https://img.shields.io/badge/-Haven-3bd47f?style=flat&logo=android&logoColor=white)](https://play.google.com/store/apps/details?id=org.havenapp.main)ㅤ 
-
-		</details>
 - **[<img src='https://play-lh.googleusercontent.com/Xb_KbjGC3J8xrj1QmZqYhUq1A6aww5ikFuXfCqJonww-vz38y6xUjHzvH65AGrQU9P4=s48' width='16' height='16' alt='icon' /> Secure Task](https://play.google.com/store/apps/details?id=com.balda.securetask)** - Triggers actions, when certain security conditions are met, such as multiple failed login attempts or monitor settings changed. It does require Tasker, and needs to be set up with ADB, device does not[…](https://awesome-privacy.xyz/security-tools/mobile-apps/secure-task "View full Secure Task report") 
 	- <details>
 		<summary>Stats</summary>
@@ -1177,13 +1163,6 @@ The following browser add-ons give you better control over what content is able 
 		<summary>Stats</summary>
 
 		[![Fing App on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Fing_App)](https://awesome-privacy.xyz/security-tools/mobile-apps/fing-app) [![Fing App on Google Play](https://img.shields.io/badge/-Fing_App-3bd47f?style=flat&logo=android&logoColor=white)](https://play.google.com/store/apps/details?id=com.overlook.android.fing) [![Fing App on App Store](https://img.shields.io/badge/-Fing_App-0D96F6?style=flat&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/fing-network-scanner/id430921107)ㅤ 
-
-		</details>
-- **[<img src='https://raw.githubusercontent.com/nomoresat/DPITunnel-android/main/assets/logo.webp' width='16' height='16' alt='icon' /> DPI Tunnel](https://f-droid.org/packages/ru.evgeniy.dpitunnelcli/)** - An application for Android that uses various techniques to bypass DPI (Deep Packet Inspection) systems, which are used to block some sites (not available on Play store). 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: nomoresat/DPITunnel-android](https://img.shields.io/github/stars/nomoresat/DPITunnel-android?style=flat&logo=github&label=DPITunnel-android&color=%235f53f4&cacheSeconds=3600)](https://github.com/nomoresat/DPITunnel-android) [![DPI Tunnel on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=DPI_Tunnel)](https://awesome-privacy.xyz/security-tools/mobile-apps/dpi-tunnel)ㅤ 
 
 		</details>
 - **[<img src='https://blokada.org/favicon.png' width='16' height='16' alt='icon' /> Blokada](https://blokada.org/)** - This application blocks ads and trackers, doesn't require root and works for all the apps on your Android phone. Check out how it works here. 
@@ -1963,13 +1942,6 @@ detect certain content based on pattern matching
 		[![Diversion on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Diversion)](https://awesome-privacy.xyz/networking/ad-blockers/diversion)ㅤ 
 
 		</details>
-- **[<img src='https://user-images.githubusercontent.com/425580/202258429-28da1274-2fb6-49dc-930c-3833f929b65e.png' width='16' height='16' alt='icon' /> BlockParty](https://github.com/krishkumar/BlockParty)** - Native Apple (Swift) apps, for system-wide ad-blocking. Can be customized with custom host lists, primarily aimed for just ad-blocking. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: krishkumar/BlockParty](https://img.shields.io/github/stars/krishkumar/BlockParty?style=flat&logo=github&label=BlockParty&color=%235f53f4&cacheSeconds=3600)](https://github.com/krishkumar/BlockParty) [![BlockParty on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=BlockParty)](https://awesome-privacy.xyz/networking/ad-blockers/blockparty)ㅤ 
-
-		</details>
 - **[<img src='https://raw.githubusercontent.com/hectorm/hblock/master/resources/logo/bitmaps/logo-shield-ffffff-h512.png' width='16' height='16' alt='icon' /> hBlock](https://hblock.molinero.dev)** - A POSIX-compliant shell script, designed for Unix-like systems, that gets a list of domains that serve ads, tracking scripts and malware from multiple sources and creates a hosts file (alternative for[…](https://awesome-privacy.xyz/networking/ad-blockers/hblock "View full hBlock report") 
 	- <details>
 		<summary>Stats</summary>
@@ -2568,13 +2540,6 @@ It is recommended to encrypt files on your client machine, before syncing to the
 		<summary>Stats</summary>
 
 		[![Privacy Policy](https://shields.tosdr.org/en_698.svg)](https://tosdr.org/en/service/698) [![Sync.com on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Sync.com)](https://awesome-privacy.xyz/productivity/encrypted-cloud-storage/sync.com)ㅤ 
-
-		</details>
-- **[<img src='https://icon.horse/icon/www.pcloud.com' width='16' height='16' alt='icon' /> pCloud](https://www.pcloud.com)** - Secure and simple to use cloud storage, with cross-platform client apps. £3.99/month for 500 GB. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![pCloud on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=pCloud)](https://awesome-privacy.xyz/productivity/encrypted-cloud-storage/pcloud)ㅤ 
 
 		</details>
 - **[<img src='https://icon.horse/icon/peergos.org' width='16' height='16' alt='icon' /> Peergos](https://peergos.org/)** - A peer-to-peer end-to-end encrypted global filesystem with fine grained access control. Provides a secure and private space online where you can store, share and view your photos, videos, music and do[…](https://awesome-privacy.xyz/productivity/encrypted-cloud-storage/peergos "View full Peergos report") 
@@ -3398,13 +3363,6 @@ See: [Windows 10 security guide](https://heimdalsecurity.com/en/windows-10-secur
 		[![Privacy Policy](https://shields.tosdr.org/en_9043.svg)](https://tosdr.org/en/service/9043) [![NetLimiter on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=NetLimiter)](https://awesome-privacy.xyz/operating-systems/windows-defences/netlimiter)ㅤ 
 
 		</details>
-- **[<img src='https://icon.horse/icon/github.com' width='16' height='16' alt='icon' /> Sticky-Keys-Slayer](https://github.com/linuz/Sticky-Keys-Slayer)** - Scans for accessibility tools backdoors via RDP. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: linuz/Sticky-Keys-Slayer](https://img.shields.io/github/stars/linuz/Sticky-Keys-Slayer?style=flat&logo=github&label=Sticky-Keys-Slayer&color=%235f53f4&cacheSeconds=3600)](https://github.com/linuz/Sticky-Keys-Slayer) [![Sticky-Keys-Slayer on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Sticky-Keys-Slayer)](https://awesome-privacy.xyz/operating-systems/windows-defences/sticky-keys-slayer)ㅤ 
-
-		</details>
 - **[<img src='https://icon.horse/icon/docs.microsoft.com' width='16' height='16' alt='icon' /> SigCheck](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck)** - A CLI utility that shows file version number, timestamp information, and digital signature details. 
 	- <details>
 		<summary>Stats</summary>
@@ -3454,20 +3412,6 @@ See: [Windows 10 security guide](https://heimdalsecurity.com/en/windows-10-secur
 		[![CamWings on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=CamWings)](https://awesome-privacy.xyz/operating-systems/windows-defences/camwings)ㅤ 
 
 		</details>
-- **[<img src='https://icon.horse/icon/github.com' width='16' height='16' alt='icon' /> SpyDish](https://github.com/mirinsoft/spydish)** - Open source GUI app built upon PowerShell, allowing you to perform a quick and easy privacy check, on Windows 10 systems. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: mirinsoft/spydish](https://img.shields.io/github/stars/mirinsoft/spydish?style=flat&logo=github&label=spydish&color=%235f53f4&cacheSeconds=3600)](https://github.com/mirinsoft/spydish) [![SpyDish on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=SpyDish)](https://awesome-privacy.xyz/operating-systems/windows-defences/spydish)ㅤ 
-
-		</details>
-- **[<img src='https://icon.horse/icon/privazer.com' width='16' height='16' alt='icon' /> PrivaZer](https://privazer.com/)** - Good alternative to CCleaner, for deleting unnecessary data - logs, cache, history, etc. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![PrivaZer on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=PrivaZer)](https://awesome-privacy.xyz/operating-systems/windows-defences/privazer)ㅤ 
-
-		</details>
 
 <details>
 <summary>⚠️ <b>Word of Warning</b></summary>
@@ -3513,13 +3457,6 @@ From a security and privacy perspective, Linux may be a better option.
 		<summary>Stats</summary>
 
 		[![GitHub: alichtman/stronghold](https://img.shields.io/github/stars/alichtman/stronghold?style=flat&logo=github&label=stronghold&color=%235f53f4&cacheSeconds=3600)](https://github.com/alichtman/stronghold) [![Stronghold on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Stronghold)](https://awesome-privacy.xyz/operating-systems/mac-os-defences/stronghold)ㅤ 
-
-		</details>
-- **[<img src='https://icon.horse/icon/github.com' width='16' height='16' alt='icon' /> Fortress](https://github.com/essandess/macOS-Fortress)** - Kernel-level, OS-level, and client-level security for macOS. With a Firewall, Blackhole, and Privatizing Proxy for Trackers, Attackers, Malware, Adware, and Spammers; with On-Demand and On-Access Anti[…](https://awesome-privacy.xyz/operating-systems/mac-os-defences/fortress "View full Fortress report") 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: essandess/macOS-Fortress](https://img.shields.io/github/stars/essandess/macOS-Fortress?style=flat&logo=github&label=macOS-Fortress&color=%235f53f4&cacheSeconds=3600)](https://github.com/essandess/macOS-Fortress) [![Fortress on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Fortress)](https://awesome-privacy.xyz/operating-systems/mac-os-defences/fortress)ㅤ 
 
 		</details>
 
@@ -3809,13 +3746,6 @@ be physically tracked (CCTV, phone location, card payments etc)
 		[![GitHub: sparrowwallet/sparrow](https://img.shields.io/github/stars/sparrowwallet/sparrow?style=flat&logo=github&label=sparrow&color=%235f53f4&cacheSeconds=3600)](https://github.com/sparrowwallet/sparrow) [![Sparrow Wallet on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Sparrow_Wallet)](https://awesome-privacy.xyz/finance/crypto-wallets/sparrow-wallet)ㅤ 
 
 		</details>
-- **[<img src='https://icon.horse/icon/atomicwallet.io' width='16' height='16' alt='icon' /> Atomic Wallet](https://atomicwallet.io/)** - Atomic is an open-source desktop and mobile-based wallet, where your private keys are stored on your local device, and do not touch the internet. Atomic has a great feature set, and supports swapping,[…](https://awesome-privacy.xyz/finance/crypto-wallets/atomic-wallet "View full Atomic Wallet report") 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: Atomicwallet/bip38](https://img.shields.io/github/stars/Atomicwallet/bip38?style=flat&logo=github&label=bip38&color=%235f53f4&cacheSeconds=3600)](https://github.com/Atomicwallet/bip38) [![Atomic Wallet on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Atomic_Wallet)](https://awesome-privacy.xyz/finance/crypto-wallets/atomic-wallet)ㅤ 
-
-		</details>
 - **[<img src='https://icon.horse/icon/cryptosteel.com' width='16' height='16' alt='icon' /> CryptoSteel](https://cryptosteel.com/how-it-works)** - A steel plate, with engraved letters which can be permanently screwed - CryptoSteel is a good fire-proof, shock-proof, water-proof, and stainless cryptocurrency backup solution. 
 	- <details>
 		<summary>Stats</summary>
@@ -3912,13 +3842,6 @@ Not all services are available in all countries.
 		<summary>Stats</summary>
 
 		[![Privacy Policy](https://shields.tosdr.org/en_3262.svg)](https://tosdr.org/en/service/3262) [![Privacy.com on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Privacy.com)](https://awesome-privacy.xyz/finance/virtual-credit-cards/privacy.com)ㅤ 
-
-		</details>
-- **[<img src='https://icon.horse/icon/www.revolut.com' width='16' height='16' alt='icon' /> Revolut Premium](https://www.revolut.com/)** - Revolut is more of a digital bank account, and identity checks are required to sign up. Virtual cards are only available on Premium/ Metal accounts, which start at $7/month. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![Privacy Policy](https://shields.tosdr.org/en_2310.svg)](https://tosdr.org/en/service/2310) [![Revolut Premium on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Revolut_Premium)](https://awesome-privacy.xyz/finance/virtual-credit-cards/revolut-premium)ㅤ 
 
 		</details>
 - **[<img src='https://icon.horse/icon/mysudo.com' width='16' height='16' alt='icon' /> MySudo](https://mysudo.com)** - Much more than just virtual cards, MySudo is a platform for creating compartmentalised identities, each with their own virtual cards, virtual phone numbers, virtual email addresses, messaging, private[…](https://awesome-privacy.xyz/finance/virtual-credit-cards/mysudo "View full MySudo report") 
@@ -4076,13 +3999,6 @@ following sites aim to do.
 		[![GitHub: https://github.com/nostr-protocol](https://img.shields.io/github/stars/https://github.com/nostr-protocol?style=flat&logo=github&label=&color=%235f53f4&cacheSeconds=3600)](https://github.com/https://github.com/nostr-protocol) [![nostr on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=nostr)](https://awesome-privacy.xyz/social/social-networks/nostr)ㅤ 
 
 		</details>
-- **[<img src='https://icon.horse/icon/www.minds.com' width='16' height='16' alt='icon' /> Minds](https://www.minds.com)** - A social media platform designed to foster open conversations and community engagement. Rewards content creation. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![GitHub: minds/minds](https://img.shields.io/github/stars/minds/minds?style=flat&logo=github&label=minds&color=%235f53f4&cacheSeconds=3600)](https://github.com/minds/minds) [![Minds on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=Minds)](https://awesome-privacy.xyz/social/social-networks/minds)ㅤ 
-
-		</details>
 - **[<img src='https://join-lemmy.org/static/assets/icons/apple-touch-icon.png' width='16' height='16' alt='icon' /> Lemmy](https://join-lemmy.org)** - A federated, open-source link aggregator and discussion platform, similar to Reddit. Built on ActivityPub. Wide range of cross-platform [client apps](https://join-lemmy.org/apps). 
 	- <details>
 		<summary>Stats</summary>
@@ -4130,13 +4046,6 @@ so should be avoided, but if you choose to keep using them see
 		<summary>Stats</summary>
 
 		[![Privacy Policy](https://shields.tosdr.org/en_2798.svg)](https://tosdr.org/en/service/2798) [![DTube on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=DTube)](https://awesome-privacy.xyz/social/video-platforms/dtube)ㅤ 
-
-		</details>
-- **[<img src='https://i.ibb.co/gvxXK0Z/bitchute.png' width='16' height='16' alt='icon' /> BitChute](https://www.bitchute.com)** - Established in 2017, BitChute is a video hosting service that offers a platform for uploaders to evade the content restrictions found on other sites like YouTube. 
-	- <details>
-		<summary>Stats</summary>
-
-		[![Privacy Policy](https://shields.tosdr.org/en_513.svg)](https://tosdr.org/en/service/513) [![BitChute on Awesome Privacy](https://img.shields.io/badge/View%20Report-FC60A8?style=flat&logo=awesomelists&label=BitChute)](https://awesome-privacy.xyz/social/video-platforms/bitchute)ㅤ 
 
 		</details>
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T14:15:00Z",
+  "generatedAt": "2026-04-18T13:44:35Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -63,6 +63,7 @@
     "7177ba26e054a6f173ec451b420ee64d5fdef69b",
     "75ad504f96da49df98dc30842d820fd74c85deb0",
     "7a3286122e197a9b5836cfcd73fca768ccf6f50e",
+    "7bac41fe2e60a38e22a3a723d4f0af28cfe0661d",
     "7dd8e9943c9a138710901ecf1bf4775b6167629a",
     "81ed2551032e527bf5b752df5608411f91a12150",
     "824f20bf68f046a9f9bdaaf41a36a4a7e46c2d9f",
@@ -180,9 +181,93 @@
     498,
     499,
     500,
-    501
+    501,
+    504
   ],
   "entries": [
+    {
+      "date": "2026-04-18",
+      "sha": "7bac41fe2e60a38e22a3a723d4f0af28cfe0661d",
+      "pr": {
+        "number": 506,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/506",
+        "author": "Lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Padloc",
+              "category": "Essentials",
+              "section": "Password Managers"
+            },
+            {
+              "name": "Atomic Wallet",
+              "category": "Finance",
+              "section": "Crypto Wallets"
+            },
+            {
+              "name": "Revolut Premium",
+              "category": "Finance",
+              "section": "Virtual Credit Cards"
+            },
+            {
+              "name": "BlockParty",
+              "category": "Networking",
+              "section": "Ad Blockers"
+            },
+            {
+              "name": "Fortress",
+              "category": "Operating Systems",
+              "section": "Mac OS Defences"
+            },
+            {
+              "name": "PrivaZer",
+              "category": "Operating Systems",
+              "section": "Windows Defences"
+            },
+            {
+              "name": "SpyDish",
+              "category": "Operating Systems",
+              "section": "Windows Defences"
+            },
+            {
+              "name": "Sticky-Keys-Slayer",
+              "category": "Operating Systems",
+              "section": "Windows Defences"
+            },
+            {
+              "name": "pCloud",
+              "category": "Productivity",
+              "section": "Encrypted Cloud Storage"
+            },
+            {
+              "name": "DPI Tunnel",
+              "category": "Security Tools",
+              "section": "Mobile Apps"
+            },
+            {
+              "name": "Haven",
+              "category": "Security Tools",
+              "section": "Mobile Apps"
+            },
+            {
+              "name": "Minds",
+              "category": "Social",
+              "section": "Social Networks"
+            },
+            {
+              "name": "BitChute",
+              "category": "Social",
+              "section": "Video Platforms"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-04-13",
       "sha": "47cd53ef705bb9ae855e521bc68c0597b14f7325",
@@ -3965,6 +4050,16 @@
     }
   ],
   "rejections": [
+    {
+      "date": "2026-04-17",
+      "title": "Add VirtualSMS in Virtual Phone Numbers",
+      "pr": {
+        "number": 504,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/504",
+        "author": "virtualsms-io",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/265610251?v=4"
+      }
+    },
     {
       "date": "2026-04-15",
       "title": "Add FreeFile ITR to Finance category",
