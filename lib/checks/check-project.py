@@ -7,8 +7,10 @@ import re
 import sys
 from datetime import datetime, timedelta, timezone
 
-import requests
 import yaml
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import utils
 
 logging.basicConfig(
     level=logging.INFO,
@@ -27,16 +29,12 @@ MIN_STARS = 100
 INACTIVE_DAYS = 90
 MIN_AGE_DAYS = 120
 AI_COMMIT_RATIO = 0.2
-AI_BOT_AUTHORS = [
-    "noreply@anthropic.com",
-    "devin-ai-integration[bot]",
-    "copilot-swe-agent.github.com",
-    "noreply@cursor.com",
-]
 SPAM_AWESOME_THRESHOLD = 3
 SPAM_DISTINCT_REPO_THRESHOLD = 7
 SPAM_WINDOW_DAYS = 2
 NEW_ACCOUNT_DAYS = 14
+
+SESSION = utils.make_session(user_agent=USER_AGENT)
 
 LINK_MSG = (
     "The link(s) you included seem to be returning a 404."
@@ -107,71 +105,18 @@ def load_diff(path):
 
 
 def check_url(url):
-    """Return True if the URL is reachable, True on any error (no false positives)."""
-    try:
-        resp = requests.head(
-            url, timeout=TIMEOUT, allow_redirects=True,
-            headers={"User-Agent": USER_AGENT},
-        )
-        if resp.status_code >= 400:
-            resp = requests.get(
-                url, timeout=TIMEOUT, allow_redirects=True,
-                headers={"User-Agent": USER_AGENT}, stream=True,
-            )
-            resp.close()
-        if resp.status_code >= 400:
-            logging.warning("URL check failed for %s (HTTP %d)", url, resp.status_code)
-        return resp.status_code < 400
-    except Exception as exc:
-        logging.warning("URL check error for %s: %s", url, exc)
-        return True
-
-
-def parse_github_field(value):
-    """Parse a github field into (owner, repo), or (None, None) on failure."""
-    if not value:
-        return None, None
-    if value.startswith("https://github.com/"):
-        parts = value.removeprefix("https://github.com/").strip("/").split("/")
-        if len(parts) >= 2:
-            return parts[0], parts[1]
-        return None, None
-    if "/" in value:
-        parts = value.split("/")
-        if len(parts) == 2:
-            return parts[0], parts[1]
-    return None, None
+    """Return True if the URL is reachable. Transport errors are treated as reachable."""
+    ok, status = utils.check_url(url, SESSION, TIMEOUT)
+    if not ok:
+        logging.warning("URL check failed for %s (HTTP %d)", url, status)
+    elif status is None:
+        logging.warning("URL check error for %s (unreachable)", url)
+    return ok
 
 
 def _gh_get(path, token, params=None, label=""):
     """GET a GitHub API endpoint. Returns parsed JSON on 200, None otherwise."""
-    headers = {"Accept": "application/vnd.github.v3+json", "User-Agent": USER_AGENT}
-    if token:
-        headers["Authorization"] = f"token {token}"
-    try:
-        resp = requests.get(
-            f"https://api.github.com{path}",
-            headers=headers, timeout=TIMEOUT, params=params,
-        )
-        remaining = resp.headers.get("X-RateLimit-Remaining")
-        if remaining is not None:
-            try:
-                if int(remaining) < 100:
-                    logging.warning("[%s] GitHub rate limit low: %s/%s remaining",
-                                    label, remaining, resp.headers.get("X-RateLimit-Limit"))
-            except ValueError:
-                pass
-        if resp.status_code == 200:
-            return resp.json()
-        logging.warning("[%s] HTTP %d from %s", label, resp.status_code, path)
-    except Exception as exc:
-        logging.warning("[%s] request error for %s: %s", label, path, exc)
-    return None
-
-
-def fetch_repo(owner, repo, token):
-    """Fetch GitHub repo metadata, returning None on any error."""
-    return _gh_get(f"/repos/{owner}/{repo}", token, label="repos")
+    return utils.gh_get(path, token, session=SESSION, params=params, timeout=TIMEOUT, label=label)
 
 
 def load_yaml_data():
@@ -231,29 +176,14 @@ def check_links(diff, head):
     return None
 
 
-def _commit_has_bot(commit, bot_set):
-    """Check if a commit was authored or co-authored by a known AI bot."""
-    author = commit.get("commit", {}).get("author", {})
-    email = (author.get("email") or "").lower()
-    name = (author.get("name") or "").lower()
-    if email in bot_set or name in bot_set:
-        return True
-    message = (commit.get("commit", {}).get("message") or "").lower()
-    for line in message.splitlines():
-        if line.strip().startswith("co-authored-by:"):
-            if any(bot in line for bot in bot_set):
-                return True
-    return False
-
-
 def check_ai_commits(owner, repo, token):
     """Return AI_CODE_MSG if recent commits contain significant AI bot activity."""
     commits = _gh_get(f"/repos/{owner}/{repo}/commits", token,
                       params={"per_page": 100}, label="commits")
     if not commits:
         return None
-    bot_set = {a.lower() for a in AI_BOT_AUTHORS}
-    count = sum(1 for c in commits if _commit_has_bot(c, bot_set))
+    bot_set = {a.lower() for a in utils.AI_BOT_AUTHORS}
+    count = sum(1 for c in commits if utils.commit_has_bot(c, bot_set))
     if count / len(commits) >= AI_COMMIT_RATIO:
         return AI_CODE_MSG
     return None
@@ -369,12 +299,12 @@ def check_repo_signals(diff, pr_user, token, pr_body=""):
     cache = {}
     for svc in get_services(diff, "added"):
         gh = svc.get("fields", {}).get("github")
-        owner, repo = parse_github_field(gh)
+        owner, repo = utils.parse_github_field(gh)
         if not owner:
             continue
         cache_key = f"{owner}/{repo}"
         if cache_key not in cache:
-            cache[cache_key] = fetch_repo(owner, repo, token)
+            cache[cache_key] = utils.fetch_repo(owner, repo, token, session=SESSION)
         data = cache[cache_key]
         if not data:
             continue

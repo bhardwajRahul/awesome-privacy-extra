@@ -1,5 +1,4 @@
 """Generates .github/changelog.json from git history of awesome-privacy.yml.
-
 Walks the first-parent commit history, diffs consecutive YAML versions,
 and enriches entries with GitHub PR metadata.
 """
@@ -58,8 +57,25 @@ def get_commits():
 
 
 def is_sync_merge(message):
-    """Return True for branch-sync merges that don't introduce content changes."""
+    """Return True for branch-sync merges (no PR number in message)."""
     return message.startswith("Merge branch 'main'") or message.startswith("Merge branch 'master'")
+
+
+def pr_merges_in_second_parent(sha):
+    """`Merge pull request #N` commits the sync merge pulled in via its 2nd parent."""
+    try:
+        result = subprocess.run(
+            ["git", "log", "--merges", "--format=%H%x00%aI%x00%s", f"{sha}^1..{sha}^2"],
+            capture_output=True, text=True, check=True, cwd=PROJECT_ROOT,
+        )
+    except subprocess.CalledProcessError:
+        return []
+    out = []
+    for line in result.stdout.splitlines():
+        parts = line.split("\x00", 2)
+        if len(parts) == 3 and parts[2].startswith("Merge pull request #"):
+            out.append({"sha": parts[0], "date": parts[1], "message": parts[2]})
+    return out
 
 
 def extract_pr_from_message(message):
@@ -337,7 +353,7 @@ def main():
         trimmed.append(c)
         if c["sha"] == FIRST_COMMIT:
             break
-    commits = [c for c in trimmed if not is_sync_merge(c["message"])]
+    commits = trimmed
 
     new_commits = [c for c in commits if c["sha"] not in processed_shas]
     new_entries = []
@@ -353,6 +369,17 @@ def main():
 
         pr_numbers_to_fetch = set()
 
+        def emit(sha, date, message, changes):
+            """Append an entry, register its PR for metadata fetch, return counts summary."""
+            pr = extract_pr_from_message(message)
+            if pr:
+                pr_numbers_to_fetch.add(pr["number"])
+            new_entries.append({"date": date[:10], "sha": sha, "pr": pr, "changes": changes})
+            sv = changes.get("services", {})
+            return (f"+{len(sv.get('added', []))} -{len(sv.get('removed', []))} "
+                    f"~{len(sv.get('modified', []))} »{len(sv.get('moved', []))} "
+                    f"≈{len(sv.get('renamed', []))}")
+
         for i, c in enumerate(new_commits, 1):
             new_processed.add(c["sha"])
             parent = sha_to_parent.get(c["sha"])
@@ -360,20 +387,31 @@ def main():
                 continue
 
             changes = diff_commits(c["sha"], parent)
+            prefix = f"  [{i}/{len(new_commits)}]"
             if changes is None:
-                print(f"  [{i}/{len(new_commits)}] {c['date'][:10]} (no data changes)", flush=True)
+                print(f"{prefix} {c['date'][:10]} (no data changes)", flush=True)
                 continue
 
-            sv = changes.get("services", {})
-            counts = (f"+{len(sv.get('added', []))} -{len(sv.get('removed', []))} "
-                      f"~{len(sv.get('modified', []))} »{len(sv.get('moved', []))} "
-                      f"≈{len(sv.get('renamed', []))}")
-            print(f"  [{i}/{len(new_commits)}] {c['date'][:10]} {counts}  {c['message'][:60]}", flush=True)
+            # Sync merges pull content in via their 2nd parent, so their own message
+            # carries no PR number. Fan out to per-PR entries so each PR gets its own.
+            # If the chain has PR merges, we trust them to cover the content — even if
+            # all are already processed — and skip the default emit to avoid duplicates.
+            if is_sync_merge(c["message"]):
+                prs = pr_merges_in_second_parent(c["sha"])
+                if prs:
+                    for pm in prs:
+                        if pm["sha"] in processed_shas or pm["sha"] in new_processed:
+                            continue
+                        pm_changes = diff_commits(pm["sha"], pm["sha"] + "^1")
+                        if pm_changes is None:
+                            continue
+                        new_processed.add(pm["sha"])
+                        counts = emit(pm["sha"], pm["date"], pm["message"], pm_changes)
+                        print(f"{prefix} {pm['date'][:10]} {counts}  (via sync) {pm['message'][:50]}", flush=True)
+                    continue
 
-            pr = extract_pr_from_message(c["message"])
-            if pr:
-                pr_numbers_to_fetch.add(pr["number"])
-            new_entries.append({"date": c["date"][:10], "sha": c["sha"], "pr": pr, "changes": changes})
+            counts = emit(c["sha"], c["date"], c["message"], changes)
+            print(f"{prefix} {c['date'][:10]} {counts}  {c['message'][:60]}", flush=True)
 
         # Enrich entries missing full avatar data
         for e in existing_entries:
