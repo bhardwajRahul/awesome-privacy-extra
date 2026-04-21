@@ -3846,16 +3846,6 @@ categories:
           Plus, proactive security recommendations and automatic updates take the guesswork out of keeping your personal data personal. Also currently
           only supports Pixel devices and Xiaomi Mi A2 with Fairphone 4, OnePlus 8T, OnePlus 9 test builds available. Developed by the Calyx Foundation.
 
-      - name: DivestOS
-        url: https://divestos.org
-        icon: https://divestos.org/images/favicon.png
-        github: Divested-Mobile/DivestOS-Build
-        tosdrId: 2550
-        description: |
-          DivestOS is a vastly diverged unofficial more secure and private soft fork of LineageOS. DivestOS primary goal is prolonging the life-span of
-          discontinued devices, enhancing user privacy, and providing a modest increase of security where/when possible. Project is developed and maintained
-          solely by Tad (SkewedZeppelin) since 2014.
-
       - name: LineageOS
         url: https://www.lineageos.org
         icon: https://www.lineageos.org/images/logo.png
