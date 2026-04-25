@@ -3024,16 +3024,6 @@ categories:
           community, and a lot of plugins and themes. Generally privacy-respecting, but no
           encryption out of the box, and some of the code is obfuscated or not fully open source
 
-      - name: AFFiNE
-        url: https://affine.pro
-        github: toeverything/AFFiNE
-        followWith: Windows, MacOS, Linux
-        securityAudited: false
-        subreddit: AFFiNE
-        description: |
-          Privacy first, open-source alternative to Notion, monday.com and Miro.
-          It is a knowledge management tool that allows you to create, organize and share your knowledge.
-
       - name: Cryptee
         url: https://crypt.ee/
         openSource: false
