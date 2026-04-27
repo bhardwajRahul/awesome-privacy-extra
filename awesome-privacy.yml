@@ -2843,7 +2843,7 @@ categories:
         url: https://getbunker.net
         github: France-Nuage/plateforme
         openSource: true
-        icon: https://avatars.githubusercontent.com/u/189650203?v=4
+        icon: https://getbunker.net/images/en/svg/logo.svg
         description: |
           Sovereign open-source cloud platform (SSPL-1.0) hosted entirely in France. Offers managed
           hosting of open-source apps (Grafana, Matomo, Vaultwarden, etc.) and S3-compatible object
