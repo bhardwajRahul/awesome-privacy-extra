@@ -58,7 +58,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Router Firmware](#router-firmware) (2)
 	- [Network Analysis](#network-analysis) (3)
 	- [Intrusion Detection](#intrusion-detection) (5)
-	- [Cloud Hosting](#cloud-hosting) (3)
+	- [Cloud Hosting](#cloud-hosting) (4)
 	- [Domain Registrars](#domain-registrars) (2)
 	- [DNS Hosting](#dns-hosting) (1)
 	- [Mail Servers](#mail-servers) (3)
@@ -964,6 +964,7 @@ important.
 - **[<img src='https://njal.la/favicon.ico' width='14' alt='' /> Njalla](https://njal.la)** - Njalla is a privacy and security-focused domain registrar and VPN hosting provider. They own and manage all their own servers, which are based in Sweden. They accept crypto, for anonymous payments, an[…](https://awesome-privacy.xyz/networking/cloud-hosting/njalla "View full Njalla report") 
 - **[<img src='https://icon.horse/icon/www.privatelayer.com' width='14' alt='' /> Private Layer](https://www.privatelayer.com)** - Offers enterprise-grade, high-speed offshore dedicated servers, they own their own data centres, have a solid privacy policy and accept anonymous payment. 
 - **[<img src='https://icon.horse/icon/servers.guru' width='14' alt='' /> Servers Guru](https://servers.guru)** - Servers Guru provides affordable and anonymous VPS and cloud servers with dedicated cpu resources. They accept crypto-currencies (Bitcoin, Monero, Ethereum etc..) and don't require any personal inform[…](https://awesome-privacy.xyz/networking/cloud-hosting/servers-guru "View full Servers Guru report") 
+- **[<img src='https://getbunker.net/images/en/svg/logo.svg' width='14' alt='' /> Bunker](https://getbunker.net)** - Sovereign open-source cloud platform (SSPL-1.0) hosted entirely in France. Offers managed hosting of open-source apps (Grafana, Matomo, Vaultwarden, etc.) and S3-compatible object storage. GDPR-native[…](https://awesome-privacy.xyz/networking/cloud-hosting/bunker "View full Bunker report") 
 
 <details>
 <summary>⚠️ <b>Word of Warning</b></summary>

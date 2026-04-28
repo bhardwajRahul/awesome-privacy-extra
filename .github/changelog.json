@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T20:17:22Z",
+  "generatedAt": "2026-04-28T17:33:05Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -46,6 +46,7 @@
     "3e760b3a774e6b65f62866dc3effa5b504a4e10f",
     "4145b323ab2b8e93d05392ba12ace9ee815c27f9",
     "4155d6bcfc0d01136a323bfb841452e478be1fa6",
+    "4313ea5f7d58117889174d4d02f64127fa670dc9",
     "4396c163483fe7aaecb54e719ee5f3df690e146b",
     "45a87356b37a54a2d289d5018bdbcb5a56575a02",
     "463d62190462ca5dfdf71fa72234a10e6dbcdd48",
@@ -200,9 +201,33 @@
     501,
     504,
     511,
-    513
+    513,
+    522
   ],
   "entries": [
+    {
+      "date": "2026-04-28",
+      "sha": "4313ea5f7d58117889174d4d02f64127fa670dc9",
+      "pr": {
+        "number": 525,
+        "url": "https://github.com/Lissy93/awesome-privacy/pull/525",
+        "author": "FGRibreau",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/138050?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Bunker",
+              "category": "Networking",
+              "section": "Cloud Hosting"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-04-25",
       "sha": "9ad78e8af115f4c8115083d956da93d12a1a03f2",
