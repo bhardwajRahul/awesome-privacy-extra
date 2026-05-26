@@ -1343,15 +1343,6 @@ categories:
           [Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en-GB) -
           [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/)
 
-      - name: ScriptSafe
-        url: https://www.andryou.com/scriptsafe
-        github: andryou/scriptsafe
-        icon: https://lh3.googleusercontent.com/c5co_NoLmEt48VC_yVp0JgKcgd83yiq_CdekGaOlBBfD5WII5mjxngERgikcQd4P56uoX9epiknU5ktXadPqj2EEVsE
-        description: |
-          Allows you to block the execution of certain scripts. **Download**:
-          [Chrome](https://chromewebstore.google.com/detail/scriptsafe/oiigbmnaadbkfbmpbfijlflahbdbdgdf) -
-          [Opera](https://addons.opera.com/en/extensions/details/scriptsafe-2/)
-
       - name: Firefox Multi-Account Containers
         github: mozilla/multi-account-containers
         icon: https://addons.mozilla.org/user-media/addon_icons/782/782160-64.png
