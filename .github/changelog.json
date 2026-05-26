@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T20:16:08Z",
+  "generatedAt": "2026-05-26T20:24:04Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -41,6 +41,7 @@
     "37a568f94afd5a677598f080186f10e202108678",
     "38441ff44cb085ce70667b79460e90fac4f847a6",
     "39fd929067cb8e48c12314e88ec42436fd30e024",
+    "3a0f205ebce011cbe436e71e3181cf7c2d3bf809",
     "3a462d6d2f792b391753a9b66cffa5e42dd68c55",
     "3c768cfd34bb4a75c740815874dfb99b31233fa7",
     "3e760b3a774e6b65f62866dc3effa5b504a4e10f",
@@ -238,6 +239,29 @@
     565
   ],
   "entries": [
+    {
+      "date": "2026-05-26",
+      "sha": "3a0f205ebce011cbe436e71e3181cf7c2d3bf809",
+      "pr": {
+        "number": 574,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/574",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "Track Me Not",
+              "category": "Security Tools",
+              "section": "Browser Extensions"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-05-26",
       "sha": "c34654569457ae084fbde06c77d2b80c55aba43a",
