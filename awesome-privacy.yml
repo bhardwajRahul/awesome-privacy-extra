@@ -15,16 +15,22 @@
 #  - name: string (required) - The name of the service                          #
 #  - description: string (required) - A brief description of the service        #
 #  - url: string (required) - The URL of the service                            #
-#  - github: string - The GitHub repository of the service (user/repo-name)     #
 #  - icon: string - The URL of the service's icon                               #
-#  - followWith: string - Some categories need a prefix (e.g. platform)         #
+#  - github: string - The GitHub repository of the service (user/repo-name)     #
+#  - codeberg: string - ...or (if not GH) the Codeberg repo (user/repo-name)    #
+#  - git: string - ...or the full URL to the repo for an external git host      #
+#  - iosApp: string - URL to the service's iOS app on the Apple App Store       #
+#  - androidApp: string - Package ID of Android app on Google Play Store        #
+#  - tosdrId: integer - The ID of the service on ToS;DR  (find at tosdr.org)    #
 #  - securityAudited: boolean - Has the service has been publicly audited       #
 #  - openSource: boolean - Whether the service is fully open source             #
 #  - acceptsCrypto: boolean - Whether the service accepts anonymous payment     #
-#  - tosdrId: string - The ID of the service on ToS;DR  (find at tosdr.org)     #
+#  - discordInvite: string - The invite code for the service's Discord server   #
+#  - subreddit: string - The service's subreddit name (without the r/ prefix)   #
+#  - followWith: string - Some categories need a prefix (e.g. platform)         #
 #                                                                               #
 #################################################################################
-# Licensed under CC0-1.0 (C) Alicia Sykes <https://aliciasykes.com> 2019 - 2024 #
+# Licensed under CC0-1.0 (C) Alicia Sykes <https://aliciasykes.com> 2019 - 2026 #
 #################################################################################
 
 categories:
