@@ -3,6 +3,7 @@
   import type { Category, Service } from '../../types/Service';
   import { formatLink } from '@utils/parse-markdown';
   import { slugify } from '@utils/fetch-data';
+  import { apiBase } from '@utils/api-config';
 
   interface ServiceResult extends Service {
     path: string;
@@ -20,11 +21,11 @@
     str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
   onMount(async () => {
-    const apiEndpoint = `https://awesome-privacy.as93.workers.dev/${searchTerm}`;
+    const apiEndpoint = `${apiBase}/v1/search?q=${encodeURIComponent(searchTerm)}`;
     const fetchedServices = await fetch(apiEndpoint)
       .then((response) => response.json())
-      .then((data) =>
-        (JSON.parse(data) || []).map((servName: string) => normalize(servName)),
+      .then((res) =>
+        (res.data || []).map((hit: { name: string }) => normalize(hit.name)),
       );
 
     const tmpResults: ServiceResult[] = [];

@@ -22,6 +22,7 @@ import argparse
 import json
 import logging
 import os
+import re
 import sys
 from datetime import datetime, timezone
 from urllib.parse import urlparse
@@ -43,23 +44,14 @@ RESTRICTIVE_LICENSES = {
 
 SESSION = utils.make_session(user_agent=USER_AGENT)
 
-SITE_INFO_URL = "https://site-info-fetch.as93.workers.dev"
-ANDROID_API_URL = "https://android-app-privacy.as93.net"
-IOS_API_URL = "https://ios-app-info.as93.net"
-TOSDR_API_URL = "https://privacy-policies.as93.workers.dev"
+API_TOKEN = os.environ.get("API_TOKEN", "")
 
 GREEN, ORANGE, RED, BLUE, WHITE = "\U0001f7e2", "\U0001f7e0", "\U0001f534", "\U0001f535", "\u26aa"
 
 
-def _api_get(url, params=None, timeout=TIMEOUT, headers=None):
-    """GET a URL, return parsed JSON on 200, else None."""
-    try:
-        resp = SESSION.get(url, headers=headers, timeout=timeout, params=params)
-        if resp.status_code == 200:
-            return resp.json()
-    except Exception as e:
-        logger.warning("Fetch failed for %s: %s", url, e)
-    return None
+def _enrich_get(path, params=None, timeout=TIMEOUT):
+    """GET a unified-API enrichment endpoint with this script's session and token."""
+    return utils.enrich_get(path, params=params, token=API_TOKEN, session=SESSION, timeout=timeout)
 
 
 def relative_time(iso_str):
@@ -158,16 +150,28 @@ def fetch_all_data(owner, repo, token):
         data["commit_count"] = None
         data["ai_commit_count"] = None
 
-    alerts = gh_get(
-        f"/repos/{owner}/{repo}/dependabot/alerts", token,
-        {"state": "open", "severity": "critical,high", "per_page": 1},
-    )
-    data["has_security_alerts"] = bool(alerts) if alerts is not None else None
-
     languages = gh_get(f"/repos/{owner}/{repo}/languages", token)
     data["languages"] = list(languages.keys()) if languages is not None else None
 
+    report = _enrich_get(f"security/{owner}/{repo}")
+    data["unpatched_advisories"] = _count_unpatched_advisories(report)
+
     return data
+
+
+SECURITY_SEVERITIES = {"medium", "high", "critical"}
+
+
+def _count_unpatched_advisories(report):
+    """Count open advisories of medium severity or above that are unpatched, or None."""
+    if not report:
+        return None
+    items = (report.get("advisories") or {}).get("items") or []
+    return sum(
+        1 for a in items
+        if not a.get("isPatched")
+        and str(a.get("severity", "")).lower() in SECURITY_SEVERITIES
+    )
 
 
 def grade_stats(data):
@@ -250,13 +254,13 @@ def grade_stats(data):
     else:
         stats.append((RED if archived else GREEN, "Is Archived", "Yes" if archived else "No"))
 
-    alerts = data.get("has_security_alerts")
-    if alerts is None:
-        stats.append((WHITE, "Security Alerts", "Unknown"))
-    elif alerts:
-        stats.append((RED, "Security Alerts", "Open critical/high alerts"))
+    adv = data.get("unpatched_advisories")
+    if adv is None:
+        stats.append((WHITE, "Security Advisories", "Unknown"))
+    elif adv > 0:
+        stats.append((ORANGE, "Security Advisories", f"{adv} potentially unpatched CVEs"))
     else:
-        stats.append((GREEN, "Security Alerts", "None"))
+        stats.append((GREEN, "Security Advisories", "No unpatched active CVEs found"))
 
     ai = data.get("ai_commit_count")
     if ai is None:
@@ -287,8 +291,8 @@ def grade_stats(data):
 
 
 def fetch_website_data(url):
-    """Fetch site info from the worker API."""
-    return _api_get(SITE_INFO_URL, params={"url": url}, timeout=15)
+    """Fetch site info from the unified API."""
+    return _enrich_get("website", params={"url": url}, timeout=15)
 
 
 def check_security_txt(url):
@@ -400,8 +404,16 @@ def grade_website_stats(data, url, has_security_txt):
 def fetch_android_data(package_id):
     """Fetch Android app privacy data."""
     package_id = package_id.split("id=")[-1] if "id=" in package_id else package_id
-    data = _api_get(f"{ANDROID_API_URL}/{package_id}")
+    data = _enrich_get(f"android/{package_id}")
     return data if data and not data.get("error") else None
+
+
+_DEGOOGLED = {
+    "gold": (GREEN, "Gold (works)"),
+    "silver": (GREEN, "Silver (minor issues)"),
+    "bronze": (ORANGE, "Bronze (limited)"),
+    "broken": (RED, "Broken"),
+}
 
 
 def grade_android_stats(data):
@@ -426,15 +438,24 @@ def grade_android_stats(data):
     stats.append(_info_or_unknown("Created", _friendly_date(data.get("created"))))
     stats.append(_info_or_unknown("Last Updated", _friendly_date(data.get("updated"))))
 
+    status = utils.degoogled_status(data)
+    if status:
+        color, label = _DEGOOGLED.get(status, (BLUE, status.title()))
+        stats.append((color, "De-Googled", label))
+
     return stats
 
 
 def fetch_ios_data(app_url):
-    """Fetch iOS app info."""
-    # The API requires a country code in the URL path — insert /us/ if missing
-    if app_url and "apps.apple.com/app/" in app_url:
-        app_url = app_url.replace("apps.apple.com/app/", "apps.apple.com/us/app/", 1)
-    return _api_get(IOS_API_URL, params={"appStoreUrl": app_url})
+    """Fetch iOS app info, extracting the numeric id and country from the store URL."""
+    if not app_url:
+        return None
+    id_match = re.search(r"id(\d+)", app_url)
+    if not id_match:
+        return None
+    country_match = re.search(r"apps\.apple\.com/([a-z]{2})/", app_url)
+    country = country_match.group(1) if country_match else "us"
+    return _enrich_get(f"ios/{id_match.group(1)}", params={"country": country})
 
 
 def grade_ios_stats(data):
@@ -457,13 +478,13 @@ def grade_ios_stats(data):
 
 def fetch_tosdr_data(service_id):
     """Fetch ToS;DR privacy policy data."""
-    return _api_get(f"{TOSDR_API_URL}/{service_id}")
+    return _enrich_get(f"privacy/{service_id}")
 
 
 def grade_tosdr_stats(data):
     """Grade ToS;DR privacy policy stats."""
     stats = []
-    params = data.get("parameters") or {}
+    params = data or {}
 
     rating = params.get("rating")
     if not rating:

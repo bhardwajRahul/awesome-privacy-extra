@@ -1,12 +1,13 @@
 import { error } from './logger';
 import { safeFetch } from './safe-fetch';
+import { apiBase, enrichHeaders } from './api-config';
 
 export const fetchWebsiteInfo = async (
   url: string,
 ): Promise<WebsiteData | null> => {
-  const endpoint = `https://site-info-fetch.as93.workers.dev/?url=${url}`;
+  const endpoint = `${apiBase}/v1/enrich/website?url=${encodeURIComponent(url)}`;
   try {
-    const res = await safeFetch(endpoint);
+    const res = await safeFetch(endpoint, { headers: enrichHeaders() });
     if (!res.ok) {
       error('Website', `HTTP ${res.status} for ${url} (${endpoint})`);
       return null;

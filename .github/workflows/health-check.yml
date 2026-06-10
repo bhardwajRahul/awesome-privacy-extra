@@ -37,6 +37,7 @@ jobs:
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          API_TOKEN: ${{ secrets.API_TOKEN }}
           CATEGORY: ${{ inputs.category }}
           SECTION: ${{ inputs.section }}
           SERVICE: ${{ inputs.service }}

@@ -8,6 +8,20 @@ imports are skipped there, letting `setup_logging()` work without them.
 from .term import make_colors, setup_logging
 
 try:
+    from .api import (
+        degoogled_status,
+        enrich_get,
+        fetch_android_app,
+        fetch_ios,
+        fetch_privacy,
+        fetch_security_report,
+        ios_app_id,
+        ios_days_since_update,
+        ios_rating,
+        privacy_grade,
+        tracker_count,
+        unpatched_advisories,
+    )
     from .data import DATA_PATH, PROJECT_ROOT, iter_services, load_yaml, slugify
     from .github import (
         AI_BOT_AUTHORS,
@@ -23,8 +37,9 @@ try:
         repo_status,
     )
     from .http import DEFAULT_TIMEOUT, DEFAULT_USER_AGENT, check_url, make_session
-except ImportError:
-    pass
+except ImportError as exc:
+    if exc.name not in ("requests", "yaml"):
+        raise
 
 __all__ = [
     "AI_BOT_AUTHORS",
@@ -34,8 +49,18 @@ __all__ = [
     "PROJECT_ROOT",
     "check_url",
     "commit_has_bot",
+    "degoogled_status",
+    "enrich_get",
+    "fetch_android_app",
+    "fetch_ios",
+    "fetch_privacy",
     "fetch_repo",
+    "fetch_security_report",
     "gh_get",
+    "ios_app_id",
+    "ios_days_since_update",
+    "ios_rating",
+    "privacy_grade",
     "iter_services",
     "load_yaml",
     "make_colors",
@@ -49,4 +74,6 @@ __all__ = [
     "repo_status",
     "setup_logging",
     "slugify",
+    "tracker_count",
+    "unpatched_advisories",
 ]

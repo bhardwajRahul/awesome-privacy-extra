@@ -1,12 +1,13 @@
 import { error } from './logger';
 import { safeFetch } from './safe-fetch';
+import { apiBase, enrichHeaders } from './api-config';
 
 export const fetchRedditInfo = async (
   subreddit: string,
 ): Promise<RedditData | null> => {
-  const endpoint = `https://subreddit-info.as93.net/${subreddit}`;
+  const endpoint = `${apiBase}/v1/enrich/reddit/${subreddit}`;
   try {
-    const res = await safeFetch(endpoint);
+    const res = await safeFetch(endpoint, { headers: enrichHeaders() });
     if (!res.ok) {
       error('Reddit', `HTTP ${res.status} for r/${subreddit} (${endpoint})`);
       return null;

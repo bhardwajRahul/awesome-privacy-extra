@@ -1,135 +1,25 @@
 import { error } from './logger';
 import { safeFetch } from './safe-fetch';
-
-const githubHeaders = (): Record<string, string> => {
-  const headers: Record<string, string> = {
-    'User-Agent': 'awesome-privacy',
-    Accept: 'application/vnd.github.v3+json',
-  };
-  const token = import.meta.env.GITHUB_API_KEY;
-  if (token) headers['Authorization'] = `token ${token}`;
-  return headers;
-};
-
-const fetchFromGitHub = async (
-  github: string,
-): Promise<GitHubStatsResponse | null> => {
-  const base = `https://api.github.com/repos/${github}`;
-  const headers = githubHeaders();
-
-  const [infoRes, langsRes, tagsRes, contribRes, commitsRes] =
-    await Promise.all([
-      safeFetch(base, { headers }),
-      safeFetch(`${base}/languages`, { headers }),
-      safeFetch(`${base}/tags`, { headers }),
-      safeFetch(`${base}/contributors`, { headers }),
-      safeFetch(`${base}/commits`, { headers }),
-    ]);
-
-  if (!infoRes.ok) {
-    error(
-      'GitHub Stats',
-      `GitHub API returned ${infoRes.status} for ${github}`,
-    );
-    return null;
-  }
-
-  const parseJson = (r: Response) =>
-    r.ok && r.status !== 204 ? r.json() : null;
-
-  const [info, languages, tags, contributors, commits] = await Promise.all(
-    [infoRes, langsRes, tagsRes, contribRes, commitsRes].map(parseJson),
-  );
-
-  return {
-    info: {
-      ownerUsername: info.owner?.login ?? '',
-      ownerAvatar: info.owner?.avatar_url ?? '',
-      description: info.description ?? '',
-      url: info.html_url ?? '',
-      homepage: info.homepage ?? '',
-      language: info.language ?? '',
-      topics: info.topics ?? [],
-      license: info.license?.spdx_id ?? '',
-      isFork: info.fork ?? false,
-      isArchived: info.archived ?? false,
-      createdAt: info.created_at ?? '',
-      updatedAt: info.updated_at ?? '',
-      size: info.size ?? 0,
-      scarCount: info.stargazers_count ?? 0,
-      forksCount: info.forks_count ?? 0,
-      watchersCount: info.watchers_count ?? 0,
-    },
-    languages: languages ?? {},
-    versions: (tags ?? []).map(
-      (tag: {
-        name: string;
-        commit?: { sha?: string };
-        zipball_url?: string;
-        tarball_url?: string;
-      }) => ({
-        name: tag.name,
-        commit: tag.commit?.sha ?? '',
-        zipball: tag.zipball_url ?? '',
-        tarball: tag.tarball_url ?? '',
-      }),
-    ),
-    contributors: (contributors ?? []).map(
-      (c: { login?: string; avatar_url?: string; contributions?: number }) => ({
-        username: c.login ?? '',
-        avatar: c.avatar_url ?? '',
-        contributions: c.contributions ?? 0,
-      }),
-    ),
-    commits: (commits ?? []).map(
-      (c: {
-        sha?: string;
-        commit?: {
-          author?: { name?: string; date?: string };
-          message?: string;
-        };
-        author?: { login?: string; avatar_url?: string };
-      }) => ({
-        sha: c.sha ?? '',
-        authorName: c.commit?.author?.name ?? '',
-        authorDate: c.commit?.author?.date ?? '',
-        message: c.commit?.message ?? '',
-        authorUsername: c.author?.login ?? '',
-        authorAvatar: c.author?.avatar_url ?? '',
-      }),
-    ),
-  };
-};
-
-const fetchFromWorker = async (
-  github: string,
-): Promise<GitHubStatsResponse | null> => {
-  const res = await safeFetch(`https://repo-info.as93.workers.dev/${github}`);
-  if (!res.ok) return null;
-  return res.json();
-};
+import { apiBase, enrichHeaders } from './api-config';
 
 const normalizeRepo = (github: string): string =>
-  github.replace(/^https?:\/\/github\.com\//, '');
+  github.replace(/^https?:\/\/github\.com\//, '').replace(/\/+$/, '');
 
 export const fetchGitHubStats = async (
   github: string,
 ): Promise<GitHubStatsResponse | null> => {
-  github = normalizeRepo(github);
+  const repo = normalizeRepo(github);
+  const endpoint = `${apiBase}/v1/enrich/github/${repo}`;
   try {
-    const result = await fetchFromGitHub(github);
-    if (result) return result;
-    const fallback = await fetchFromWorker(github);
-    if (fallback) return fallback;
-    error('GitHub Stats', `Both direct API and worker failed for ${github}`);
-    return null;
-  } catch (err) {
-    try {
-      return await fetchFromWorker(github);
-    } catch {
-      error('GitHub Stats', `All fetches failed for ${github}: ${err}`);
+    const res = await safeFetch(endpoint, { headers: enrichHeaders() });
+    if (!res.ok) {
+      error('GitHub Stats', `HTTP ${res.status} for ${repo} (${endpoint})`);
       return null;
     }
+    return await res.json();
+  } catch (err) {
+    error('GitHub Stats', `Network error for ${repo}: ${err}`);
+    return null;
   }
 };
 
@@ -143,14 +33,18 @@ export interface GitHubStatsResponse {
     language: string;
     topics: string[];
     license: string;
+    licenseName: string;
     isFork: boolean;
     isArchived: boolean;
+    forkParent: string;
     createdAt: string;
     updatedAt: string;
+    pushedAt: string;
     size: number;
-    scarCount: number;
+    starCount: number;
     forksCount: number;
     watchersCount: number;
+    openIssues: number;
   };
   languages: {
     [key: string]: number;
@@ -164,6 +58,7 @@ export interface GitHubStatsResponse {
   contributors: Array<{
     username: string;
     avatar: string;
+    url: string;
     contributions: number;
   }>;
   commits: Array<{

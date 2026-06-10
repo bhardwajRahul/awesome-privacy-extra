@@ -1,5 +1,6 @@
 import { error } from './logger';
 import { safeFetch } from './safe-fetch';
+import { apiBase, enrichHeaders } from './api-config';
 
 const extractPackage = (str: string): string =>
   str.includes('id=') ? str.split('id=')[1] : str;
@@ -7,9 +8,10 @@ const extractPackage = (str: string): string =>
 export const fetchAndroidInfo = async (
   androidPackage: string,
 ): Promise<AndroidInfo | null> => {
-  const endpoint = `https://android-app-privacy.as93.net/${extractPackage(androidPackage)}`;
+  const pkg = extractPackage(androidPackage);
+  const endpoint = `${apiBase}/v1/enrich/android/${pkg}`;
   try {
-    const res = await safeFetch(endpoint);
+    const res = await safeFetch(endpoint, { headers: enrichHeaders() });
     if (!res.ok) {
       error(
         'Android',

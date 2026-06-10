@@ -6,10 +6,10 @@ Checks:
 - https-url: homepage URL uses HTTPS
 - icon-reachable: icon URL does not 404
 - description-len: description is 50 to 280 chars (over 420 escalates to warn)
-- opensource-github: openSource listings include a github, codeberg or git field
+- opensource-github: openSource listings include a repo link (error); not open source is noted (info)
 - duplicate-url: no URL appears in more than one listing
 - androidApp-valid: androidApp is a package name, not a URL
-- iosApp-reachable: App Store URL resolves
+- iosApp-valid: iosApp is a valid App Store URL with an app id
 - subreddit-exists: subreddit page exists on reddit.com
 - tosdr-valid: tosdrId still resolves on tosdr.org
 - discord-invite-valid: Discord invite code is still valid
@@ -18,10 +18,16 @@ Checks:
 - github-activity: github repo was pushed recently (needs token)
 - github-license: github repo has a license (needs token)
 - github-fork: github repo is not a fork (needs token)
+- security-advisories: no open unpatched CVEs (needs API_TOKEN)
+- android-trackers: android app has few trackers (1 info, 2+ warn) (needs API_TOKEN)
+- ios-app: iOS app exists, is maintained and rated (missing/stale/low-rating warn) (needs API_TOKEN)
+- degoogled-compat: android app works on de-googled android (needs API_TOKEN)
+- privacy-grade: tosdr privacy grade is B or better (C info, D/E warn) (needs API_TOKEN)
 
 Findings have three severities: error (must fix), warn (should review), info (FYI).
 HTTP 403/406/429 (and 404 on known bot-blocking hosts such as play.google.com) on
-reachability checks is demoted from error to warn.
+reachability checks means the probe was rate-limited or blocked, not that the resource is
+missing, so it is logged during the run but left out of the results.
 
 Exit codes:
     1 when pass rate drops below FAIL_PASS_RATE or errors exceed FAIL_MAX_ERRORS (5)
@@ -52,7 +58,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
-from threading import Lock
+from threading import Lock, local
 from time import monotonic
 from typing import Callable, Iterable
 from urllib.parse import urlparse
@@ -111,12 +117,26 @@ class Finding:
 
 @dataclass
 class Context:
-    session: object
     token: str
     timeout: int
+    api_token: str = ""
     url_occurrences: dict = field(default_factory=dict)
     repo_cache: dict = field(default_factory=dict)
+    security_cache: dict = field(default_factory=dict)
+    android_cache: dict = field(default_factory=dict)
+    privacy_cache: dict = field(default_factory=dict)
+    ios_cache: dict = field(default_factory=dict)
     repo_lock: Lock = field(default_factory=Lock)
+    _sessions: local = field(default_factory=local)
+
+    @property
+    def session(self):
+        """Per-thread session, since a requests.Session is not safe to share across threads."""
+        session = getattr(self._sessions, "value", None)
+        if session is None:
+            session = utils.make_session()
+            self._sessions.value = session
+        return session
 
 
 @dataclass
@@ -124,6 +144,7 @@ class CheckSpec:
     name: str
     scope: str
     needs_github: bool
+    needs_api: bool
     fn: Callable
     doc: str
 
@@ -131,9 +152,11 @@ class CheckSpec:
 CHECKS: dict[str, CheckSpec] = {}
 
 
-def check(name, *, scope="service", needs_github=False):
+def check(name, *, scope="service", needs_github=False, needs_api=False):
     def deco(fn):
-        CHECKS[name] = CheckSpec(name, scope, needs_github, fn, (fn.__doc__ or "").strip())
+        CHECKS[name] = CheckSpec(
+            name, scope, needs_github, needs_api, fn, (fn.__doc__ or "").strip()
+        )
         return fn
     return deco
 
@@ -160,21 +183,74 @@ def _get_repo(entry: Entry, ctx: Context):
     return data
 
 
-def _unreachable(field, url, status, default_sev):
-    """Return (severity, message). Bot-blocking signatures demote error to warn."""
-    host = urlparse(url).netloc.lower()
-    soft = status in _SOFT_HTTP or (status == 404 and host in _SOFT_404_HOSTS)
-    sev = "warn" if default_sev == "error" and soft else default_sev
-    detail = f"{url} returned HTTP {status}" if status else f"{url} could not be reached"
-    return sev, f"{field} is unreachable, {detail}"
+def _get_security_report(entry: Entry, ctx: Context):
+    owner, repo = utils.parse_github_field(entry.service.get("github"))
+    if not owner:
+        return None
+    key = f"{owner}/{repo}"
+    with ctx.repo_lock:
+        if key in ctx.security_cache:
+            return ctx.security_cache[key]
+    data = utils.fetch_security_report(owner, repo, ctx.api_token,
+                                       session=ctx.session, label=entry.name)
+    with ctx.repo_lock:
+        ctx.security_cache[key] = data
+    return data
+
+
+def _get_android(entry: Entry, ctx: Context):
+    pkg = entry.service.get("androidApp")
+    if not pkg:
+        return None
+    with ctx.repo_lock:
+        if pkg in ctx.android_cache:
+            return ctx.android_cache[pkg]
+    data = utils.fetch_android_app(pkg, ctx.api_token, session=ctx.session, label=entry.name)
+    with ctx.repo_lock:
+        ctx.android_cache[pkg] = data
+    return data
+
+
+def _get_privacy(entry: Entry, ctx: Context):
+    tid = entry.service.get("tosdrId")
+    if not tid:
+        return None
+    key = str(tid)
+    with ctx.repo_lock:
+        if key in ctx.privacy_cache:
+            return ctx.privacy_cache[key]
+    data = utils.fetch_privacy(tid, ctx.api_token, session=ctx.session, label=entry.name)
+    with ctx.repo_lock:
+        ctx.privacy_cache[key] = data
+    return data
+
+
+def _get_ios(entry: Entry, ctx: Context):
+    """Return (report, http_status) for the listing's iOS app, both None if no valid id."""
+    app_id = utils.ios_app_id(entry.service.get("iosApp"))
+    if not app_id:
+        return None, None
+    with ctx.repo_lock:
+        if app_id in ctx.ios_cache:
+            return ctx.ios_cache[app_id]
+    result = utils.fetch_ios(entry.service.get("iosApp"), ctx.api_token,
+                             session=ctx.session, label=entry.name, return_status=True)
+    with ctx.repo_lock:
+        ctx.ios_cache[app_id] = result
+    return result
 
 
 def _reachability_finding(entry, check_name, field, url, default_sev, ctx):
     ok, status = utils.check_url(url, ctx.session, ctx.timeout)
     if ok:
         return None
-    sev, msg = _unreachable(field, url, status, default_sev)
-    return _finding(entry, check_name, sev, msg)
+    host = urlparse(url).netloc.lower()
+    if status in _SOFT_HTTP or (status == 404 and host in _SOFT_404_HOSTS):
+        # Rate-limited or bot-blocked probe, inconclusive so log it but do not report
+        logging.info("%s for %s inconclusive (HTTP %s) possibly just rate-limited/blocked", check_name, url, status)
+        return None
+    detail = f"{url} returned HTTP {status}" if status else f"{url} could not be reached"
+    return _finding(entry, check_name, default_sev, f"{field} is unreachable, {detail}")
 
 
 @check("url-reachable")
@@ -222,14 +298,16 @@ def _description_len(entry: Entry, ctx: Context) -> Iterable[Finding]:
 
 @check("opensource-github")
 def _opensource_github(entry: Entry, ctx: Context) -> Iterable[Finding]:
-    """openSource: true services must include a github, codeberg or git field."""
+    """openSource: true needs a repo link (error); not open source is noted (info)."""
     svc = entry.service
-    if svc.get("openSource") is True and not (
-        svc.get("github") or svc.get("codeberg") or svc.get("git")
-    ):
+    has_repo = svc.get("github") or svc.get("codeberg") or svc.get("git")
+    if svc.get("openSource") is True and not has_repo:
         yield _finding(entry, "opensource-github", "error",
-                       "marked openSource but missing a repository link "
-                       "(`github`, `codeberg` or `git`)")
+                       "marked openSource but missing a repository link ")
+    elif svc.get("openSource") is False or not has_repo:
+        reason = "openSource is false" if svc.get("openSource") is False else "no repository linked"
+        yield _finding(entry, "opensource-github", "info",
+                       f"not open source ({reason})")
 
 
 @check("androidApp-valid")
@@ -241,14 +319,13 @@ def _android_app_valid(entry: Entry, ctx: Context) -> Iterable[Finding]:
                        f"androidApp {val} is not a package name (expected com.example.app)")
 
 
-@check("iosApp-reachable")
-def _iosapp_reachable(entry: Entry, ctx: Context) -> Iterable[Finding]:
-    """iOS App Store link must resolve."""
+@check("iosApp-valid")
+def _iosapp_valid(entry: Entry, ctx: Context) -> Iterable[Finding]:
+    """iosApp must be an App Store URL with an app id."""
     url = entry.service.get("iosApp")
-    if url:
-        f = _reachability_finding(entry, "iosApp-reachable", "iosApp", url, "warn", ctx)
-        if f:
-            yield f
+    if url and not utils.ios_app_id(url):
+        yield _finding(entry, "iosApp-valid", "warn",
+                       f"iosApp {url} is not a valid App Store URL (expected .../idNNNN)")
 
 
 @check("subreddit-exists")
@@ -344,6 +421,81 @@ def _github_license(entry: Entry, ctx: Context) -> Iterable[Finding]:
         yield _finding(entry, "github-license", "warn", "repository has no declared license")
 
 
+@check("security-advisories", needs_api=True)
+def _security_advisories(entry: Entry, ctx: Context) -> Iterable[Finding]:
+    """No open unpatched CVEs (low/medium warn, high/critical error)."""
+    if not entry.service.get("github"):
+        return
+    low_med, high_crit = utils.unpatched_advisories(_get_security_report(entry, ctx))
+    if high_crit:
+        yield _finding(entry, "security-advisories", "error",
+                       f"{high_crit} open high/critical "
+                       f"advisor{'ies' if high_crit != 1 else 'y'}")
+    if low_med:
+        yield _finding(entry, "security-advisories", "warn",
+                       f"{low_med} open low/medium "
+                       f"advisor{'ies' if low_med != 1 else 'y'}")
+
+
+@check("android-trackers", needs_api=True)
+def _android_trackers(entry: Entry, ctx: Context) -> Iterable[Finding]:
+    """Android app has few trackers (1 info, 2+ warn)."""
+    if not entry.service.get("androidApp"):
+        return
+    count = utils.tracker_count(_get_android(entry, ctx))
+    if not count:
+        return
+    sev = "info" if count == 1 else "warn"
+    yield _finding(entry, "android-trackers", sev,
+                   f"Android app reports {count} tracker{'s' if count != 1 else ''}")
+
+
+@check("ios-app", needs_api=True)
+def _ios_app(entry: Entry, ctx: Context) -> Iterable[Finding]:
+    """iOS app exists, is maintained and rated (missing/stale/<2 stars warn)."""
+    if not utils.ios_app_id(entry.service.get("iosApp")):
+        return
+    report, status = _get_ios(entry, ctx)
+    if status == 404:
+        yield _finding(entry, "ios-app", "warn",
+                       "iOS app not found on the App Store (may have been removed)")
+        return
+    days = utils.ios_days_since_update(report)
+    if days is not None and days >= 365:
+        yield _finding(entry, "ios-app", "warn",
+                       f"iOS app not updated in over a year (last release {days} days ago)")
+    rating, count = utils.ios_rating(report)
+    if count and rating is not None and rating < 2:
+        yield _finding(entry, "ios-app", "warn",
+                       f"iOS app is rated below 2 stars ({rating:.1f} from {count:,} ratings)")
+
+
+@check("degoogled-compat", needs_api=True)
+def _degoogled_compat(entry: Entry, ctx: Context) -> Iterable[Finding]:
+    """Android app works on de-Googled Android (broken warn, limited info)."""
+    if not entry.service.get("androidApp"):
+        return
+    status = utils.degoogled_status(_get_android(entry, ctx))
+    if status == "broken":
+        yield _finding(entry, "degoogled-compat", "warn",
+                       "Android app is broken on de-Googled Android")
+    elif status == "bronze":
+        yield _finding(entry, "degoogled-compat", "info",
+                       "Android app has limited de-Googled support")
+
+
+@check("privacy-grade", needs_api=True)
+def _privacy_grade(entry: Entry, ctx: Context) -> Iterable[Finding]:
+    """ToS;DR privacy grade is B or better (C info, D/E warn)."""
+    if not entry.service.get("tosdrId"):
+        return
+    grade = utils.privacy_grade(_get_privacy(entry, ctx))
+    if grade == "C":
+        yield _finding(entry, "privacy-grade", "info", "privacy policy has minor concerns")
+    elif grade in ("D", "E"):
+        yield _finding(entry, "privacy-grade", "warn", f"privacy policy has major issues (graded: {grade})")
+
+
 @check("duplicate-url", scope="global")
 def _duplicate_url(entries, ctx: Context) -> Iterable[Finding]:
     """No two listings share the same homepage URL."""
@@ -375,11 +527,11 @@ def _install_sigint():
     signal.signal(signal.SIGINT, handler)
 
 
-def build_context(args, data, token):
+def build_context(args, data, token, api_token):
     ctx = Context(
-        session=utils.make_session(),
         token=token,
         timeout=args.timeout,
+        api_token=api_token,
     )
     for cat, sec, svc in utils.iter_services(data):
         url = _normalize_url(svc.get("url"))
@@ -654,11 +806,13 @@ def main():
     if args.list_checks:
         for name, spec in CHECKS.items():
             tag = colors["dim"](" (needs GITHUB_TOKEN)") if spec.needs_github else ""
+            tag += colors["dim"](" (needs API_TOKEN)") if spec.needs_api else ""
             print(f"  {colors['cyan'](name.ljust(22))} {spec.doc}{tag}")
         return
 
     enabled = resolve_enabled(args.only, args.skip)
     token = args.token or os.environ.get("GITHUB_TOKEN", "")
+    api_token = os.environ.get("API_TOKEN", "")
 
     if not token:
         gh_checks = [n for n in enabled if CHECKS[n].needs_github]
@@ -669,6 +823,16 @@ def main():
                 ", ".join(gh_checks),
             )
             enabled = [n for n in enabled if not CHECKS[n].needs_github]
+
+    if not api_token:
+        api_checks = [n for n in enabled if CHECKS[n].needs_api]
+        if api_checks:
+            logging.warning(
+                "API_TOKEN not set, skipping API checks (%s). "
+                "Export API_TOKEN to enable them.",
+                ", ".join(api_checks),
+            )
+            enabled = [n for n in enabled if not CHECKS[n].needs_api]
 
     if not enabled:
         logging.error("No checks to run after filters.")
@@ -689,7 +853,7 @@ def main():
                       args.category, args.section, args.service)
         sys.exit(2)
 
-    ctx = build_context(args, data, token)
+    ctx = build_context(args, data, token, api_token)
     logging.info("Reviewing %d service(s) with %d check(s): %s",
                  len(entries), len(enabled), ", ".join(enabled))
 

@@ -1,12 +1,13 @@
 import { error } from './logger';
 import { safeFetch } from './safe-fetch';
+import { apiBase, enrichHeaders } from './api-config';
 
 export const fetchDiscordInfo = async (
   discordInvite: string,
 ): Promise<DiscordInfo | null> => {
-  const endpoint = `https://discord-invite-info.as93.net/${discordInvite}`;
+  const endpoint = `${apiBase}/v1/enrich/discord/${discordInvite}`;
   try {
-    const res = await safeFetch(endpoint);
+    const res = await safeFetch(endpoint, { headers: enrichHeaders() });
     if (!res.ok) {
       error('Discord', `HTTP ${res.status} for ${discordInvite} (${endpoint})`);
       return null;
