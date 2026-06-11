@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T10:46:25Z",
+  "generatedAt": "2026-06-11T13:01:43Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -158,6 +158,7 @@
     "f3adf137b0415999e4625ddc7e4ba26c2c56d4a9",
     "f3d9d9a7950d13baaae2f973600499f0d7b12e15",
     "f4332e985d4064559535b16397d9c35fdce587eb",
+    "f6467fe43a42b6b4a6e9e887ab0e4ae7accd93d8",
     "f987d9969923ee65464d0de187183719af278998",
     "fa1c504da13a0d2f8e75ef95566811e54750ff3d",
     "fd84267e31da8b5086eed9d3f2a0c2dfa7f23d93",
@@ -260,7 +261,10 @@
     598,
     600,
     604,
-    606
+    606,
+    609,
+    610,
+    611
   ],
   "entries": [
     {
@@ -5559,6 +5563,36 @@
     }
   ],
   "rejections": [
+    {
+      "date": "2026-06-11",
+      "title": "Adds MoveCheck to Task Management",
+      "pr": {
+        "number": 611,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/611",
+        "author": "adinglee",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/31424213?v=4"
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "title": "Add Private Terminal (Finance → Investment Research)",
+      "pr": {
+        "number": 610,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/610",
+        "author": "cerkon1",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/212885509?v=4"
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "title": "Adds Offsend to Developer Tools",
+      "pr": {
+        "number": 609,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/609",
+        "author": "hudishkin",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/5276783?v=4"
+      }
+    },
     {
       "date": "2026-06-08",
       "title": "Add PII Blackout to awesome-privacy.yml",

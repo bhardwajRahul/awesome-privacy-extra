@@ -719,6 +719,8 @@ provide shared network connections and cache data to speed up common requests.
 > [V2ray-core](https://github.com/v2ray/v2ray-core) is a platform for building
 > proxies to bypass network restrictions and protect your privacy.
 > See [more](https://github.com/hugetiny/awesome-vpn)
+> [TransparentTorProxy](https://github.com/onyks-os/TransparentTorProxy) is a Linux CLI
+> utility that transparently routes all system traffic through the Tor network.
 > </details>
 
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
