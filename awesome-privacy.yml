@@ -4447,6 +4447,15 @@ categories:
           hashes, JWTs, Base64, text comparison and more. Useful alternative to
           pasting sensitive data into random online tools.
 
+      - name: Bruno
+        url: https://www.usebruno.com/
+        icon: https://www.usebruno.com/favicon.ico
+        github: usebruno/bruno
+        openSource: true
+        description: |
+          Open-source, local-first API client that stores collections as plain text files
+          and works seamlessly with Git. A privacy-focused alternative to cloud-based API tools.
+
   - name: Smart Home & IoT
     sections:
     - name: Voice Assistants
