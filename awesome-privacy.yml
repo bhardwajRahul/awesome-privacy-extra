@@ -5085,6 +5085,20 @@ categories:
           Self-hosted photo and video backup and management server, with automatic
           mobile upload, timeline view, albums, search and facial recognition.
           Needs to be self-hosted, but gives you full ownership + control over your photos.
+      - name: Ente Photos
+        url: https://ente.com
+        icon: https://ente.com/assets/ente-photos-icon-transparent.png
+        openSource: true
+        followWith: Self-hosted
+        github: ente-io/ente
+        iosApp: https://apps.apple.com/us/app/ente-photos/id1542026904
+        androidApp: io.ente.photos
+        discordInvite: z2YVKkycX3
+        subreddit: enteio
+        description: |
+          Provides an open source, audited end-to-end encrypted platform to store photos in the cloud without needing to trust the service provider.
+          With apps for desktop, web and mobile, album sharing, public links, semantic search and facial recognition.
+          Self-hosted or 10GB free.
 
     - name: E-Book Readers
       alternativeTo: ['kindle', 'google play books', 'apple books', 'adobe digital editions', 'calibre']
