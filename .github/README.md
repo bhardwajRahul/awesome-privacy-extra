@@ -53,7 +53,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [DNS Providers](#dns-providers) (3)
 	- [DNS Clients](#dns-clients) (6)
 	- [Firewalls](#firewalls) (13)
-	- [Ad Blockers](#ad-blockers) (6)
+	- [Ad Blockers](#ad-blockers) (7)
 	- [Host Block Lists](#host-block-lists) (5)
 	- [Router Firmware](#router-firmware) (2)
 	- [Network Analysis](#network-analysis) (3)
@@ -850,15 +850,11 @@ detect certain content based on pattern matching
 - **[<img src='https://icon.horse/icon/blokada.org' width='14' alt='' /> Blokada](https://blokada.org/)** - Open source mobile ad-blocker that acts like a firewall. Since it's device-wide, once connected all apps will have ads/ trackers blocked, and the blacklist can be edited. The app is free, but there is[…](https://awesome-privacy.xyz/networking/ad-blockers/blokada "View full Blokada report") 
 - **[<img src='https://rethinkdns.com/ico/app_icon.svg' width='14' alt='' /> RethinkDNS & Firewall](https://rethinkdns.com/app)** - Free and open source ad-blocker and a firewall for Android 6+ (no root required). 
 - **[<img src='https://raw.githubusercontent.com/gorhill/uBlock/master/src/img/ublock.svg' width='14' alt='' /> uBlock Origin](https://github.com/gorhill/uBlock)** - Light-weight, fast browser extension for Firefox and Chromium (Chrome, Edge, Brave Opera etc), that blocks tracking, ads and known malware. uBlock is easy-to-use out-of-the-box, but also has a highly[…](https://awesome-privacy.xyz/networking/ad-blockers/ublock-origin "View full uBlock Origin report") 
+- **[<img src='https://avatars.githubusercontent.com/u/8361145?s=256&v=4' width='14' alt='' /> AdGuard Home](https://adguard.com/en/adguard-home/overview.html)** - Self-hosted, network-wide DNS server that blocks ads and trackers for every device on your network, comparable to Pi-hole. Open source, with a web dashboard, encrypted DNS, and parental controls. Need[…](https://awesome-privacy.xyz/networking/ad-blockers/adguard-home "View full AdGuard Home report") 
 
 <details>
 <summary>✳️ <b>Notable Mentions</b></summary>
 
-> [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) is a cross-platform DNS Ad Blocker,
-> similar to Pi Hole, but with some additional features, like parental controls,
-> per-device configuration and the option to force safe search.
-> This may be a good solution for families with young children.
-> 
 > Some VPNs have ad-tracking blocking features, such as
 > [TrackStop with PerfectPrivacy](https://www.perfect-privacy.com/en/features/trackstop?a_aid=securitychecklist).
 > 
