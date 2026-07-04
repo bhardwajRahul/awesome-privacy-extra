@@ -1093,17 +1093,13 @@ categories:
       services:
       - name: Email Privacy Tester
         url: https://www.emailprivacytester.com/
-        openSource: true
-        github: mikecardwell/email-privacy-tester
+        git: https://gitlab.com/grepular/ept3
         tosdrId: 9837
         description: |
-          Quick tool, that enables you to test whether your mail client "reads" your emails
-          before you've opened them, and also checks what analytics, read-receipts or other
-          tracking data your mail client allows to be sent back to the sender. The system is
-          open source ([on GitLab](https://gitlab.com/mikecardwell/ept3)), developed by
-          [Mike Cardwell](https://www.grepular.com/) and trusted, but if you do not want to
-          use your real email, creating a second account with the same provider, should yield
-          identical results.
+          Tests whether your mail client "reads" emails before you open them, and what
+          analytics, read-receipts or other tracking data it leaks back to the sender.
+          Developed by [Mike Cardwell](https://www.grepular.com/); use a spare address
+          if you'd rather not test your real one.
 
       - name: DKIM Verifier
         url: https://addons.thunderbird.net/en-US/thunderbird/addon/dkim-verifier/?collection_id=a5557f08-eafd-7a39-81c6-09127da790f7
