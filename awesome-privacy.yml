@@ -809,24 +809,6 @@ categories:
         For a more details comparison of email providers, see
         [email-comparison.as93.net](https://email-comparison.as93.net/)
       services:
-      - name: Forward Email
-        url: https://forwardemail.net
-        icon: https://forwardemail.net/img/android-chrome-192x192.png
-        github: forwardemail/free-email-forwarding
-        openSource: true
-        subreddit: forwardemail
-        description: |
-          A 100% open-source, privacy-focused email service with quantum-safe encrypted
-          SQLite mailboxes (sandboxed and portable). Supports IMAP, POP3, SMTP, CalDAV
-          (calendars), and CardDAV (contacts). Features include
-          [OpenPGP/MIME and E2EE](https://forwardemail.net/en/faq#do-you-support-openpgpmime-end-to-end-encryption-e2ee-and-web-key-directory-wkd),
-          [Web Key Directory (WKD)](https://forwardemail.net/en/faq#do-you-support-openpgpmime-end-to-end-encryption-e2ee-and-web-key-directory-wkd),
-          and [quantum-resistant encryption](https://forwardemail.net/blog/docs/best-quantum-safe-encrypted-email-service)
-          using ChaCha20-Poly1305. Offers a free plan (forwarding only), Enhanced Protection
-          at $3/month (10 GB storage, unlimited domains/aliases), Team at $9/month, and
-          Enterprise at $250/month. Additional storage available. Can be
-          [self-hosted via Docker](https://forwardemail.net/en/faq#do-you-support-self-hosting).
-          All code is available on [GitHub](https://github.com/forwardemail).
       - name: ProtonMail
         url: https://protonmail.com
         icon: https://proton.me/favicons/android-chrome-192x192.png
@@ -1065,14 +1047,17 @@ categories:
           [open source](https://github.com/mozilla/fx-private-relay), and able to me self-hosted
           for advanced usage.
 
-      - name: ForwardEmail
+      - name: Forward Email
         url: https://forwardemail.net
         icon: https://forwardemail.net/img/android-chrome-192x192.png
-        github: forwardemail/free-email-forwarding
+        github: forwardemail/forwardemail.net
+        securityAudited: true
+        subreddit: forwardemail
         description: |
-          Simple open source catch-all email forwarding service. Easy to self-host (see on
-          [GitHub](https://github.com/forwardemail/free-email-forwarding)), or the hosted version
-          has a free plan as well as a ($3/month) premium plan.
+          Catch-all email forwarding service with unlimited aliases and custom domains,
+          configured via DNS records. Self-hostable; the hosted version has a limited free plan,
+          with paid plans (from $3/month) adding encrypted IMAP/POP3 mailboxes.
+          Audited by Cure53 in 2026.
 
       - name: ProtonMail
         followWith: Professional plan or higher
@@ -4539,7 +4524,7 @@ categories:
         description: |
           An open source, end-to-end encrypted home security camera
           solution (Pi Zero 2W). Easy to setup with GUI deploy tool.
-          Fully E2EE remote access (live streaming & smart motion alerts) 
+          Fully E2EE remote access (live streaming & smart motion alerts)
           via mobile app and untrusted self-hostable relay.
         url: https://secluso.com
         icon: https://avatars.githubusercontent.com/u/271067237?s=400&u=183f42b70679974bfd5b7e0ad0bd12aee0b45d98&v=4
