@@ -4249,14 +4249,6 @@ categories:
           This frees up disk space, improves performance, but most importantly
           helps to protect privacy.
 
-      - name: Windows Secure Baseline
-        url: https://github.com/nsacyber/Windows-Secure-Host-Baseline
-        github: nsacyber/Windows-Secure-Host-Baseline
-        description: |
-          Group Policy objects, compliance checks, and configuration tools that
-          provide an automated and flexible approach for securely deploying and
-          maintaining the latest releases of Windows 10.
-
       - name: USBFix
         url: https://www.usb-antivirus.com
         icon: https://www.usb-antivirus.com/wp-content/uploads/2015/12/logo-usbfix-80x80.png.webp
