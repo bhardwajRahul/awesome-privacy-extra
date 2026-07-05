@@ -1539,7 +1539,7 @@ categories:
           [Chrome](https://chrome.google.com/webstore/detail/gbefmodhlophhakmoecijeppjblibmie) / [Firefox](https://addons.mozilla.org/addon/linguist-translator/)
 
       - name: LibRedirect
-        url: https://libredirect.github.io
+        url: https://libredirect.manerakai.com
         github: libredirect/browser_extension
         icon: https://raw.githubusercontent.com/libredirect/browser_extension/refs/heads/master/src/assets/images/libredirect.svg
         description: |
