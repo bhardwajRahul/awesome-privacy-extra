@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T10:37:00Z",
+  "generatedAt": "2026-07-07T10:50:44Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -169,6 +169,7 @@
     "e7474c579b7e33b3c47ed76492068d914e4566f1",
     "e9b1fee82705ca9b52a9db6e081d46bc4c417f01",
     "ec4cbec4affe6d6ddcb178504e137d552af3771f",
+    "ec4fd408e533d274e7d5ef3508cb691660da58b3",
     "ec9119761c83aeafc5cf436dc2306280212c2470",
     "ecff3a8955b5784394db558d7c1ee93e4d6b4c8b",
     "ef4b1e2d266551e76ffb202e9f78e86b66d347d1",
@@ -312,6 +313,29 @@
     659
   ],
   "entries": [
+    {
+      "date": "2026-07-07",
+      "sha": "ec4fd408e533d274e7d5ef3508cb691660da58b3",
+      "pr": {
+        "number": 378,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/378",
+        "author": "TheophileDiot",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/57175294?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "BunkerWeb",
+              "category": "Networking",
+              "section": "Firewalls"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-07-07",
       "sha": "8886ff026e379dee61b2472d8b722a6a26df6cd9",

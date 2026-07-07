@@ -52,7 +52,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Proxies](#proxies) (2)
 	- [DNS Providers](#dns-providers) (3)
 	- [DNS Clients](#dns-clients) (5)
-	- [Firewalls](#firewalls) (13)
+	- [Firewalls](#firewalls) (14)
 	- [Ad Blockers](#ad-blockers) (7)
 	- [Host Block Lists](#host-block-lists) (5)
 	- [Router Firmware](#router-firmware) (2)
@@ -815,6 +815,7 @@ can access which IPs.
 - **[<img src='https://icon.horse/icon/wiki.ubuntu.com' width='14' alt='' /> Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall)** - The ufw (Uncomplicated Firewall) is a GUI application and CLI, that allows you to configure a firewall using `iptables` much more easily. 
 - **[<img src='https://www.ipfire.org/static/img/apple-touch-icon-192x192-precomposed.png' width='14' alt='' /> IPFire](https://www.ipfire.org)** - IPFire is a hardened, versatile, state-of-the-art Open Source firewall based on Linux. Easy to install on a raspberry Pi, since it is lightweight and heavily customizable. 
 - **[<img src='https://shorewall.org/favicon.ico' width='14' alt='' /> Shorewall](https://shorewall.org)** - An open source firewall tool for Linux that builds upon the Netfilter system built into the Linux kernel, making it easier to manage more complex configuration schemes with iptables. 
+- **[<img src='https://docs.bunkerweb.io/latest/assets/favicon.png' width='14' alt='' /> BunkerWeb](https://www.bunkerweb.io)** - BunkerWeb is an open-source Next-Generation Web Application Firewall (WAF). It provides easy protection for your web services and is designed to remain secure by default. It integrates seamlessly with[…](https://awesome-privacy.xyz/networking/firewalls/bunkerweb "View full BunkerWeb report") 
 - **[<img src='https://opnsense.org/wp-content/themes/OPNsense/assets/ico/favicon.png' width='14' alt='' /> OPNSense](https://opnsense.org)** - Enterprise firewall and router for protecting networks, built on the FreeBSD system. 
 
 <details>
