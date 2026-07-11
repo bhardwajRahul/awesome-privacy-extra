@@ -3178,6 +3178,20 @@ categories:
           Gitea, OpenProject and CalDAV integration. Features include time
           tracking, Pomodoro timer, break reminders, and idle detection.
 
+      - name: Mindwtr
+        url: https://mindwtr.app
+        github: dongdongbh/Mindwtr
+        discordInvite: gc4h5t58PR
+        openSource: true
+        icon: https://github.com/dongdongbh/Mindwtr/raw/main/apps/mobile/assets/images/icon.png
+        androidApp: tech.dongdongbh.mindwtr
+        iosApp: https://apps.apple.com/app/mindwtr/id6758597144
+        description: |
+          A Getting Things Done + Pomodoro productivity system
+          for desktop and mobile. Local-first, no account required,
+          can sync via WebDAV/Dropbox/local file or self-hosted deployment.
+          With a CLI, REST API and MCP for scripting, has optional BYOK AI.
+
     ###########################
     ###### Backup & Sync ######
     ###########################
