@@ -36,7 +36,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [P2P Messaging](#p2p-messaging) (4)
 	- [Encrypted Email](#encrypted-email) (4)
 	- [Email Clients](#email-clients) (6)
-	- [Mail Forwarding](#mail-forwarding) (5)
+	- [Mail Forwarding](#mail-forwarding) (4)
 	- [Email Security Tools](#email-security-tools) (2)
 	- [VOIP Clients](#voip-clients) (2)
 	- [Virtual Phone Numbers](#virtual-phone-numbers) (8)
@@ -376,7 +376,12 @@ Revealing your real email address online can put you at risk. Email aliasing all
 - **[<img src='https://simplelogin.io/favicon.ico' width='14' alt='' /> SimpleLogin](https://simplelogin.io)** - Fully open source (view on [GitHub](https://github.com/simple-login)) alias service with many additional features. Can be self-hosted, or the managed version has a free plan, as well as hosted premium option ($2.99/ month) for using cu[…](https://awesome-privacy.xyz/communication/mail-forwarding/simplelogin "View full SimpleLogin report") 
 - **[<img src='https://relay.firefox.com/favicon.svg' width='14' alt='' /> Firefox Private Relay](https://relay.firefox.com)** - Developed and managed by Mozilla, Relay is a Firefox addon, that lets you make an email alias with 1 click, and have all messages forwarded onto your personal email. Relay is totally free to use, and[…](https://awesome-privacy.xyz/communication/mail-forwarding/firefox-private-relay "View full Firefox Private Relay report") 
 - **[<img src='https://forwardemail.net/img/android-chrome-192x192.png' width='14' alt='' /> Forward Email](https://forwardemail.net)** - Catch-all email forwarding service with unlimited aliases and custom domains, configured via DNS records. Self-hostable; the hosted version has a limited free plan, with paid plans (from $3/month) add[…](https://awesome-privacy.xyz/communication/mail-forwarding/forward-email "View full Forward Email report") 
-- **[<img src='https://proton.me/favicons/android-chrome-192x192.png' width='14' alt='' /> ProtonMail](https://protonmail.com/pricing)** - If you already have ProtonMail's Professional (€8/month) or Visionary (€30/month) package, then an implementation of this feature is available via the Catch-All Email feature. 
+
+<details>
+<summary>✳️ <b>Notable Mentions</b></summary>
+
+> Some full email providers include aliasing or catch-all addresses as a built-in (usually premium) feature. For example, [Proton](https://proton.me) (catch-all, plus hide-my-email aliases via Proton Pass), [StartMail](https://www.startmail.com), [mailbox.org](https://mailbox.org) and [Posteo](https://posteo.de) all offer this.
+> </details>
 
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
 

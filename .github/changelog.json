@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T15:08:46Z",
+  "generatedAt": "2026-07-12T15:25:36Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -160,6 +160,7 @@
     "ccc7b43aa598acf709f8f5c77f987c2b95ec2921",
     "d027f6bf3eb4420f106b6778fa302f326a05f08c",
     "d397fc760983ced96c6d187305c0ea210ac6cece",
+    "d80c4314af6e5f0cc150d5e2b3cba7329932c7f2",
     "d835706239a1a20d3cd98d511a82038823dbef9e",
     "da7374ad750bd07bc42649cfdd09edd14901cc40",
     "dbb44f56681d9456e5808737b8c3873c0c7e8af5",
@@ -328,6 +329,29 @@
     671
   ],
   "entries": [
+    {
+      "date": "2026-07-12",
+      "sha": "d80c4314af6e5f0cc150d5e2b3cba7329932c7f2",
+      "pr": {
+        "number": 674,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/674",
+        "author": "lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "ProtonMail",
+              "category": "Communication",
+              "section": "Mail Forwarding"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-07-12",
       "sha": "e60f397fd1fc7703fc2258ce4b65d585259040a2",
