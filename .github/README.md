@@ -43,7 +43,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Team Collaboration](#team-collaboration) (6)
 - **Security Tools**
 	- [Browser Extensions](#browser-extensions) (19)
-	- [Mobile Apps](#mobile-apps) (22)
+	- [Mobile Apps](#mobile-apps) (23)
 	- [Online Tools](#online-tools) (17)
 - **Networking**
 	- [Virtual Private Networks](#virtual-private-networks) (7)
@@ -525,6 +525,7 @@ The following browser add-ons give you better control over what content is able 
 - **[<img src='https://play-lh.googleusercontent.com/hMhLdDNBR_rBIDctJ5yCPbyPy0fi_6FHp9MdgaOIPPedyqgwr6tsZq_AO3W1z4Zb8HJ_=w240-h480' width='14' alt='' /> Catch the Man-in-the-Middle](https://play.google.com/store/apps/details?id=me.brax.certchecker)** - Simple tool, that compares SHA-1 fingerprints of the the SSL certificates seen from your device, and the certificate seen from an external network. If they do not match, this may indicate a man-in-the[…](https://awesome-privacy.xyz/security-tools/mobile-apps/catch-the-man-in-the-middle "View full Catch the Man-in-the-Middle report") 
 - **[<img src='https://f-droid.org/repo/com.celzero.bravedns/en-US/icon_AwgyVcHjczoaNxANCvUeSJrEfOWsIIeIpCgBaUKoXuY=.png' width='14' alt='' /> RethinkDNS & Firewall](https://rethinkdns.com)** - An open-source ad-blocker and firewall app for Android 6+ (does not require root). 
 - **[<img src='https://f-droid.org/assets/apple-touch-icon_ypJwtCrcixeH_qV6LdcMYk1anFIR9o-_ufR__1wNdJY=.png' width='14' alt='' /> F-Droid](https://f-droid.org/)** - F-Droid is an installable catalogue of FOSS applications for Android. The client enables you to browse, install, and keep track of updates on your device. 
+- **[<img src='https://raw.githubusercontent.com/thomasbuilds/Spectre/refs/heads/main/metadata/en-US/images/icon.png' width='14' alt='' /> Spectre](https://github.com/thomasbuilds/Spectre)** - A radio frequency scanner app for Android with recon and offensive capabilities. 
 
 <details>
 <summary>⚠️ <b>Word of Warning</b></summary>

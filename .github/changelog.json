@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T18:09:05Z",
+  "generatedAt": "2026-07-13T19:59:39Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -158,6 +158,7 @@
     "ccac7d7e61218b60d2c74b497ff58f42f783e9fc",
     "ccbab9def79590fa9194fcb8ffb4e6ab193cba87",
     "ccc7b43aa598acf709f8f5c77f987c2b95ec2921",
+    "cd00f6446dcb52ac0e94e47b0ae7db3f7cc916e2",
     "d027f6bf3eb4420f106b6778fa302f326a05f08c",
     "d397fc760983ced96c6d187305c0ea210ac6cece",
     "d80c4314af6e5f0cc150d5e2b3cba7329932c7f2",
@@ -327,9 +328,33 @@
     666,
     667,
     668,
-    671
+    671,
+    675
   ],
   "entries": [
+    {
+      "date": "2026-07-13",
+      "sha": "cd00f6446dcb52ac0e94e47b0ae7db3f7cc916e2",
+      "pr": {
+        "number": 652,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/652",
+        "author": "g-maxxx",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/76626543?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "Spectre",
+              "category": "Security Tools",
+              "section": "Mobile Apps"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-07-12",
       "sha": "e8bd96dde0f2b147e6472605d9db8da34dfd31b4",
@@ -6442,6 +6467,16 @@
     }
   ],
   "rejections": [
+    {
+      "date": "2026-07-13",
+      "title": "Adds ShieldFive to Encrypted Cloud Storage",
+      "pr": {
+        "number": 675,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/675",
+        "author": "chogarcia",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4965837?v=4"
+      }
+    },
     {
       "date": "2026-07-11",
       "title": "Add MirrorNotes in Digital Notes",
