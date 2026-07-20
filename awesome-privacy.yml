@@ -3174,6 +3174,17 @@ categories:
           without creating an account; hosts get a full calendar with two-way sync to Google,
           Outlook and iCloud. A managed cloud plan is offered too, not self-hosted.
 
+      - name: Rallly
+        url: https://rallly.co/
+        icon: https://raw.githubusercontent.com/lukevella/rallly/refs/heads/main/apps/web/public/favicon.svg
+        github: lukevella/rallly
+        discordInvite: uzg4ZcHbuM
+        openSource: true
+        description: |
+          Open-source & self-hostable scheduling tool that helps you find the best date
+          and time to meet. Create a poll with a few options, share the link, and let your
+          participants vote on when they're available. No more back-and-forth emails.
+
     ###############################
     ###### Task Management ######
     ##############################
