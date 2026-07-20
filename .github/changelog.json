@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T11:30:55Z",
+  "generatedAt": "2026-07-20T12:30:10Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -108,6 +108,7 @@
     "88c0cb324458962c52691a05384aab459bf740b2",
     "8950c0b79c0fc336f579002466dcc2f8eaad43ea",
     "8c0cdf76b53040df0fe362941ca4a085d346ce8a",
+    "8d3c89895f72fc663c6ebd0e68525ef8167b5a02",
     "8ee48cc161dd204f6eea70e8988ad3d4eb17e0c7",
     "906ceba8d144bc074ceab3872424f3dd5d205fa5",
     "90d8ef9b928ed9abb25b3c2480717e6174451488",
@@ -6579,16 +6580,6 @@
     }
   ],
   "rejections": [
-    {
-      "date": "2026-07-19",
-      "title": "Adds Bangle.io to Digital Notes",
-      "pr": {
-        "number": 688,
-        "url": "https://github.com/lissy93/awesome-privacy/pull/688",
-        "author": "kepta",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/6966254?v=4"
-      }
-    },
     {
       "date": "2026-07-18",
       "title": "Re-add VirtualSMS (privacy + security issues from #504 resolved)",

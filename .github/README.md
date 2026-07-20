@@ -1059,6 +1059,8 @@ important.
 > [Safe Notes](https://play.google.com/store/apps/details?id=com.protectedtext.android) Android app.
 > [Laverna](https://laverna.cc/) is a cross-platform secure notes app,
 > where all entries are formatted with markdown.
+> [Bangle.io](https://app.bangle.io) is a local-first WYSIWYG Markdown notes PWA,
+> storing notes in browser storage or user-selected folders.
 > </details>
 
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
