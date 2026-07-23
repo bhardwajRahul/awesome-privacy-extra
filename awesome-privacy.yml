@@ -3615,6 +3615,24 @@ categories:
           No tracking, ads or data collection; all search and routing happen on-device. A community fork
           of Organic Maps, supporting driving, cycling and hiking.
 
+    - name: Accessibility
+      intro: |
+        Accessibility software like screen readers, dictation and voice input often runs
+        in the cloud, sending everything you say or read to a remote server. Privacy-respecting
+        alternatives keep this processing on your device, so your input never leaves it.
+      services:
+      - name: Vocalinux
+        description: |
+          Offline system-wide voice dictation for Linux (X11 and Wayland).
+          Uses local models (whisper.cpp, Whisper, or VOSK) so microphone
+          audio never leaves the device. Tray app with hotkeys; GPLv3.
+          Currently beta software.
+        url: https://vocalinux.com/
+        github: jatinkrmalik/vocalinux
+        icon: https://vocalinux.com/icon-192x192.png
+        followWith: Linux
+        openSource: true
+
   - name: Utilities
     sections:
     ##############################
@@ -4503,18 +4521,7 @@ categories:
         For that reason it is recommended not to have these devices in your house.
         The following are open source AI voice assistants, that aim to provide a
         human voice interface while also protecting your privacy and security
-      services:
-      - name: Vocalinux
-        description: |
-          Offline system-wide voice dictation for Linux (X11 and Wayland).
-          Uses local models (whisper.cpp, Whisper, or VOSK) so microphone
-          audio never leaves the device. Tray app with hotkeys; GPLv3.
-          Currently beta software.
-        url: https://vocalinux.com/
-        github: jatinkrmalik/vocalinux
-        icon: https://vocalinux.com/icon-192x192.png
-        followWith: Linux
-        openSource: true
+      services: []
 
       notableMentions: |
         [Mycroft](https://github.com/MycroftAI/mycroft-core) and [Kalliope](https://github.com/kalliope-project/kalliope) removed, as no longer active.
