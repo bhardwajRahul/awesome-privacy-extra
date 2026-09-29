@@ -69,6 +69,7 @@ categories:
           Hardened, secure and offline password manager. Does not have cloud-sync baked
           in, deemed to be [gold standard](https://keepass.info/ratings.html) for secure
           password managers. KeePass clients: [Strongbox](https://apps.apple.com/us/app/strongbox-keepass-pwsafe/id897283731)
+          *(Mac & iOS)*, [KeePassium](https://apps.apple.com/app/keepassium-keepass-passwords/id1435127111)
           *(Mac & iOS)*, [KeePassDX](https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free)
           *(Android)*, [KeeWeb](https://keeweb.info) *(Web-based/ self-hosted)*,
           [KeePassXC](https://keepassxc.org) *(Windows, Mac & Linux)*, see more KeePass
