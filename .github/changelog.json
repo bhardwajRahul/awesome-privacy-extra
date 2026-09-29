@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T00:16:43Z",
+  "generatedAt": "2026-09-29T22:18:29Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -71,6 +71,7 @@
     "46279446b308aa665734d590e4625f3955714b23",
     "463d62190462ca5dfdf71fa72234a10e6dbcdd48",
     "474de7b56c37fb9bf8991fcc3e42df91acc74049",
+    "4785185e15a54bfa0afc92ac9b506d6d8a26d808",
     "47cd53ef705bb9ae855e521bc68c0597b14f7325",
     "48b4e2c0e5c66e573b3ab3bd567bf1c614d42473",
     "48c3cae00bd0a0c02877d47f42df6d3579504155",
@@ -466,9 +467,38 @@
     816,
     817,
     818,
-    819
+    819,
+    821,
+    822,
+    823
   ],
   "entries": [
+    {
+      "date": "2026-09-29",
+      "sha": "4785185e15a54bfa0afc92ac9b506d6d8a26d808",
+      "pr": {
+        "number": 825,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/825",
+        "author": "ltguillaume",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/4777345?v=4"
+      },
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "KeePass",
+              "category": "Essentials",
+              "section": "Password Managers",
+              "fields": [
+                "description"
+              ]
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-09-24",
       "sha": "ad4621e651898e5467637421d5506880e09581ae",
@@ -7305,6 +7335,36 @@
     }
   ],
   "rejections": [
+    {
+      "date": "2026-09-27",
+      "title": "Adds Obfusk8 to Metadata Removal",
+      "pr": {
+        "number": 823,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/823",
+        "author": "EpicFail20",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/261627847?v=4"
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "title": "Add FileOnTap – private browser-based file converter",
+      "pr": {
+        "number": 822,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/822",
+        "author": "zjch022",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/275394221?v=4"
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Add FileOnTap – private browser-based file converter",
+      "pr": {
+        "number": 821,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/821",
+        "author": "zjch022",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/275394221?v=4"
+      }
+    },
     {
       "date": "2026-09-21",
       "title": "Add ShrinkKit to Metadata Removal",
